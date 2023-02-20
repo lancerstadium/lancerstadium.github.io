@@ -1,0 +1,2053 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[LancerStadium]]></title>
+  <link href="https://lancerstadium.github.io/atom.xml" rel="self"/>
+  <link href="https://lancerstadium.github.io/"/>
+  <updated>2023-02-20T20:53:07+08:00</updated>
+  <id>https://lancerstadium.github.io/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://www.coderforart.com/">CoderForArt</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[目录]]></title>
+    <link href="https://lancerstadium.github.io/16766492105930.html"/>
+    <updated>2023-02-17T23:53:30+08:00</updated>
+    <id>https://lancerstadium.github.io/16766492105930.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="0%E5%BA%8F%E8%A8%80" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>0 序言</h2>
+<ul>
+<li><a href="16760129133722.html">知识体系</a></li>
+<li><a href="16760074281447.html">找工作</a></li>
+</ul>
+<h2><a id="1-c%E5%9F%BA%E7%A1%80" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1 C++基础</h2>
+<ul>
+<li><a href="16760001982195.html">C/C++基础知识点</a></li>
+<li><a href="16760073501464.html">操作系统</a></li>
+<li><a href="16760072467967.html">数据结构与算法</a></li>
+<li><a href="16760260631806.html">计算机网络</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[知识体系]]></title>
+    <link href="https://lancerstadium.github.io/16760129133722.html"/>
+    <updated>2023-02-10T15:08:33+08:00</updated>
+    <id>https://lancerstadium.github.io/16760129133722.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/16760129133722/C++%E5%90%8E%E7%AB%AF%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB.png" alt="C++后端知识体系" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[找工作]]></title>
+    <link href="https://lancerstadium.github.io/16760074281447.html"/>
+    <updated>2023-02-10T13:37:08+08:00</updated>
+    <id>https://lancerstadium.github.io/16760074281447.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li>问五险一金缴纳基数（是否全额）</li>
+<li>工资结构绩效考核标准（绩效如果占比超出30%工资水分大）</li>
+<li>有无年终（视当年效益发放意味着很可能没有）</li>
+<li>试用期几个月、员工福利、岗位津贴</li>
+<li>工作时间（补充）、加班出差（补充）、加班工资（补充）等。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C/C++基础知识点]]></title>
+    <link href="https://lancerstadium.github.io/16760001982195.html"/>
+    <updated>2023-02-10T11:36:38+08:00</updated>
+    <id>https://lancerstadium.github.io/16760001982195.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="16766496434569.html">1 基础</a></li>
+<li><a href="16766497470919.html">2 C++特性</a></li>
+</ul>
+<blockquote>
+<p>参考书籍：《C++ Primer》（第5版）、《STL源码剖析》、《深度探索C++对象模型》</p>
+</blockquote>
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[1 基础]]></title>
+    <link href="https://lancerstadium.github.io/16766496434569.html"/>
+    <updated>2023-02-18T00:00:43+08:00</updated>
+    <id>https://lancerstadium.github.io/16766496434569.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#1%E5%9F%BA%E7%A1%80">1 基础</a>
+<ul>
+<li><a href="#1%E7%AE%80%E8%BF%B0-cc%E5%8C%BA%E5%88%AB">1. 简述C/C++区别</a></li>
+<li><a href="#2-gcc%E7%BC%96%E8%AF%91%E6%BA%90%E4%BB%A3%E7%A0%81%E5%88%B0hello-c%E7%9A%84%E8%BF%87%E7%A8%8B">2. gcc编译源代码到hello.c的过程</a></li>
+<li><a href="#3-cc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86">3. C/C++内存管理</a></li>
+<li><a href="#4%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB">4. 堆和栈的区别</a></li>
+<li><a href="#5%E4%BB%80%E4%B9%88%E5%8F%AB%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F">5. 什么叫内存泄漏</a></li>
+<li><a href="#6%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B">6. 函数调用过程</a></li>
+<li><a href="#7%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8">7. 指针与引用</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="1%E7%AE%80%E8%BF%B0-cc%E5%8C%BA%E5%88%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 简述C/C++区别</h3>
+<ul>
+<li>
+<p>思想上：</p>
+<ul>
+<li>
+<p>C：面向过程、函数式，将问题分成不同步骤并调用函数依次实现</p>
+</li>
+<li>
+<p>C++：面向对象、类和对象，将数据和数据操作封装成不同的类，通过创建这些类的对象并调用成员函数来实现对数据模型的操作</p>
+</li>
+</ul>
+</li>
+<li>
+<p>应用上：</p>
+<ul>
+<li>C更偏低层，常常用于嵌入式开发、驱动开发或与硬件交互的领域</li>
+<li>C++由于优秀的面向对象机制，在大型应用程序开发方面表现出色</li>
+</ul>
+</li>
+<li>
+<p>C++是C的扩充。C++添加的机制有：对象、类模版、异常处理、运算符重载、标准模版库、命名空间、流</p>
+</li>
+</ul>
+<h3><a id="2-gcc%E7%BC%96%E8%AF%91%E6%BA%90%E4%BB%A3%E7%A0%81%E5%88%B0hello-c%E7%9A%84%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. gcc编译源代码到hello.c的过程</h3>
+<ul>
+<li>
+<p>过程：hello.c -&gt; hello.i -&gt; hello.s -&gt; hello.o -&gt; hello</p>
+</li>
+<li>
+<p>步骤：</p>
+<ol>
+<li>
+<p>预处理：hello.c -&gt; hello.i<br />
+<code>gcc -E hello.c -o hello.i</code></p>
+<p>a. 宏定义 #define</p>
+<p>b. 条件编译指令 #ifdef</p>
+<p>c. 处理文件包含指令 #include</p>
+<p>d. 删除注释</p>
+<p>e. 添加行号和文件标识（方便报错）</p>
+</li>
+<li>
+<p>编译：hello.i -&gt; hello.s （汇编文件）<br />
+<code>gcc -S hello.i -o hello.s</code></p>
+<p>a. 词法分析（<em>Lexical analysis</em>）：从左到右读入源程序，按词法规则将源代码分割成一个个单词（Token），输出二元组&lt;单词类别，单词属性&gt;。</p>
+<p>b. 语法分析（<em>Syntax analysis</em>）：识别由词法分析器输出的单词符号序列，构造一棵语法树。语法树指出了词法单元流的语法结构，可以判断是否符合语法规范。</p>
+<p>c. 语义分析（<em>Semantic analysis</em>）：使用语法树和单词符号表中的信息，进一步检查源程序是否满足语言定义的语义约束。</p>
+<p>d. 中间代码生成优化：根据语义分析的输出，生成类机器语言的中间代码，如三地址代码。改进中间代码的质量。</p>
+<p>e. 目标代码生成：将中间代码映射成目标语言(汇编语言)。</p>
+</li>
+<li>
+<p>汇编：hello.s -&gt; hello.o （二进制文件）<br />
+<code>gcc -c hello.s -o hello.o</code></p>
+<p>a. 汇编器将汇编代码翻译成可执行的机器码。每一条汇编语句对应一条机器指令，因此汇编器的工作就是根据汇编指令和机器指令的对照表一一翻译过来即可。</p>
+</li>
+<li>
+<p>链接：hello.o -&gt; hello （可执行文件）<br />
+<code>gcc hello.c -o hello</code></p>
+<p>链接器将多个汇编后得到的机器码文件链接，从而生成一个可执行程序。分为静态链接和动态链接两种方式。</p>
+<p>a. 静态链接：在链接可执行文件时，链接器会找到所有被用到的源代码，将它们复制并组合起来形成一个可执行文件。优点是由于可执行文件中已经具备了执行程序需要的全部内容，因此执行时运行速度较快。缺点是如果有多个可执行程序需要引用同一个目标文件，每个可执行程序都会复制一份该文件的副本，造成空间浪费；另外，如果某个目标文件被修改了，则所有引用该文件的可执行程序都需要重新编译。</p>
+<p>c. 动态链接：程序被拆分成独立的部分存储，只有运行时才链接在一起形成完整的程序。优点是即使多个程序依赖同一个动态链接库，也不需要将这个库复制多份，而是所有程序共享这个库；此外在程序更新时只更新被修改的库，不需要重新链接所有程序。缺点是因为将链接过程推迟到程序运行时期，所以会对程序性能产生损失。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3><a id="3-cc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. C/C++内存管理</h3>
+<ul>
+<li>内存划分：
+<ul>
+<li>栈区：运行时函数分配局部变量、函数参数、返回数据、返回地址</li>
+<li>堆区：程序员自动分配</li>
+<li>全局区（静态区）：全局变量、静态数据，系统释放</li>
+<li>常量区（文字）：存放常量值，系统释放</li>
+<li>代码区：存放函数体（类成员函数和全局区）的二进制代码</li>
+</ul>
+</li>
+<li>3种管理数据内存方式：自动存储、静态存储、动态存储
+<ul>
+<li>自动存储：函数内部定义常规变量使用自动存储空间，被调用自动产生和消亡（栈）</li>
+<li>静态存储：整个程序执行期间都存在的存储方式（static）</li>
+<li>动态存储：new/delete，不连续</li>
+</ul>
+</li>
+</ul>
+<h3><a id="4%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 堆和栈的区别</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center">堆</th>
+<th style="text-align: center">栈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center">用户自己申请</td>
+<td style="text-align: center">系统分配</td>
+</tr>
+<tr>
+<td style="text-align: center">由不连续的内存块组成的链表，大小可以调整</td>
+<td style="text-align: center">连续空间，大小固定</td>
+</tr>
+<tr>
+<td style="text-align: center">速度慢，会产生碎片</td>
+<td style="text-align: center">速度快，不产生碎片</td>
+</tr>
+<tr>
+<td style="text-align: center">向高地址增长</td>
+<td style="text-align: center">向低地址增长</td>
+</tr>
+<tr>
+<td style="text-align: center">由库函数（malloc/realloc/free, new/delete）提供</td>
+<td style="text-align: center">由系统提供</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="5%E4%BB%80%E4%B9%88%E5%8F%AB%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. 什么叫内存泄漏</h3>
+<ul>
+<li>通常指堆泄漏，程序员向系统申请任意大小堆内存块，使用完毕必须显式内存释放，否则该内存不能再次被使用。（malloc/realloc -&gt; free, new -&gt; delete）</li>
+<li>用动态存储分配函数动态开辟的空间，在使用完毕后未释放，结果导致一直占据该内存单元即为内存泄露。</li>
+<li>措施：
+<ol>
+<li>使用的时候要记得指针的长度</li>
+<li>malloc的时候得确定在那里free</li>
+<li>对指针赋值的时候应该注意被赋值指针需要不需要释放</li>
+<li>动态分配内存的指针最好不要再次赋值</li>
+<li>在C++中应该优先考虑使用智能指针</li>
+</ol>
+</li>
+</ul>
+<h3><a id="6%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. 函数调用过程</h3>
+<pre><code class="language-cpp">int main(void)
+{
+  ...
+  d = fun(a, b, c);
+  cout&lt;&lt;d&lt;&lt;endl;
+  ...
+  return 0;
+}
+</code></pre>
+<pre><code class="language-txt">1. main()：
+
+   a. 参数拷贝（push）：c-&gt;b-&gt;a
+
+   b. 保存 d = fun(a, d, c) 下一条指令：cout&lt;&lt;
+
+   c. 跳转到fun()
+
+   2. fun()：
+
+      a. 移动ebp, esp形成新的栈帧结构
+
+      b. 形成临时变量并执行相关操作（push）
+
+      c. return一个值
+
+      d. 出栈（pop）
+
+      e. 恢复main函数栈帧结构
+
+      f. 返回main()
+
+3. main()...
+</code></pre>
+<h3><a id="7%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>7. 指针与引用</h3>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2 C++特性]]></title>
+    <link href="https://lancerstadium.github.io/16766497470919.html"/>
+    <updated>2023-02-18T00:02:27+08:00</updated>
+    <id>https://lancerstadium.github.io/16766497470919.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#2-c%E7%89%B9%E6%80%A7">2 C++特性</a>
+<ul>
+<li><a href="#1-c%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81">1. C++三大特征</a></li>
+<li><a href="#2%E9%9D%99%E6%80%81%E5%A4%9A%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E5%A4%9A%E6%80%81">2. 静态多态和动态多态</a></li>
+<li><a href="#3%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E3%80%81%E9%9A%90%E8%97%8F%E5%8C%BA%E5%88%AB">3. 重载、重写、隐藏区别</a></li>
+<li><a href="#4%E8%99%9A%E5%87%BD%E6%95%B0">4. 虚函数</a></li>
+<li><a href="#5%E8%99%9A%E5%87%BD%E6%95%B0%E5%8E%9F%E7%90%86">5. 虚函数原理</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="1-c%E4%B8%89%E5%A4%A7%E7%89%B9%E5%BE%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. C++三大特征</h3>
+<ul>
+<li>封装：把客观事物抽象成一个类，将数据和方法打包在一起，加以权限的区分，达到保护安全使用的目的</li>
+<li>继承：一个对象继承另一类对象的特征和能力，增强复用性，减少数据冗余</li>
+<li>多态：为不同数据类型的实体提供统一的接口，相同消息可能送个多个不同类别对象，而系统可根据对象所属类别引发对应方法</li>
+</ul>
+<h3><a id="2%E9%9D%99%E6%80%81%E5%A4%9A%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E5%A4%9A%E6%80%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. 静态多态和动态多态</h3>
+<ul>
+<li>静态多态：在编译期间决定程序的执行过程。包括函数重载和泛型编程，泛型编程包括函数模板和类模板。</li>
+<li>动态多态：在程序运行时根据被引用对象的实际类型判断调用哪个方法。包括虚函数。</li>
+</ul>
+<h3><a id="3%E9%87%8D%E8%BD%BD%E3%80%81%E9%87%8D%E5%86%99%E3%80%81%E9%9A%90%E8%97%8F%E5%8C%BA%E5%88%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 重载、重写、隐藏区别</h3>
+<ul>
+<li>重载（<em>overload</em>）：同一作用域存在的名称相同、参数类型或参数数目不同的函数。在函数调用时根据不同的参数来决定具体调用哪个函数。</li>
+</ul>
+<pre><code class="language-cpp">class A {
+	void fun(int);
+  void fun(double, double);
+}
+</code></pre>
+<ul>
+<li>重写（<em>overwrite</em>）：派生类中的函数覆盖基类中的同名函数，要求两个函数具有相同的参数个数、参数类型和返回值类型，且基类中的函数必须是虚函数。重写指的是重写基类函数中的函数体。</li>
+</ul>
+<pre><code class="language-cpp">class A { //父类
+public:
+    virtual int fun(int a) {...}
+}
+
+class B : public A { //子类
+public:
+    virtual int fun(int a) override {...} //重写，加override可以确保是重写父类的函数
+}
+</code></pre>
+<ul>
+<li>
+<p>隐藏（hide）在某些情况下，派生类中的函数屏蔽了基类中的同名函数的现象。如果想调用基类的函数必须加作用域限定符。具体情况有：</p>
+<p>a. 派生类和基类中具有同名函数，两个函数参数列表相同，且基类的函数没有被声明称虚函数。</p>
+<pre><code class="language-cpp">class A { //父类
+public:
+    void fun(int a) {...}
+};
+
+class B : public A { //子类
+public:
+    void fun(int a) {...} //隐藏父类的fun函数
+};
+
+int main() {
+    B b;
+    b.fun(2); //调用B中的fun函数
+    b.A::fun(2); //调用A中fun函数
+    return 0;
+}
+</code></pre>
+<p>b. 派生类和基类中具有同名函数，两个函数参数列表不同，无论基类的函数是不是虚函数都会被隐藏。</p>
+<pre><code class="language-cpp">class A { //父类
+public:
+    void fun(int a) {...}
+};
+
+class B : public A { //子类
+public:
+    void fun(char* a) {...} //隐藏父类的fun函数
+};
+
+int main() {
+    B b;
+    b.fun(2); //报错，调用B中的fun函数，但参数类型出错
+    b.A::fun(2); //调用A中fun函数
+    return 0;
+}
+</code></pre>
+</li>
+</ul>
+<h3><a id="4%E8%99%9A%E5%87%BD%E6%95%B0" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 虚函数</h3>
+<ul>
+<li>基类和派生类中可以出现名字相同、参数个数和参数类型都相同的函数，直接调用时编译器会让派生类函数覆盖基类函数，或者通过添加作用域限定符来调用基类函数。</li>
+<li>下面的例子中，基类和派生类中具有同名函数display():</li>
+</ul>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+
+//定义基类
+class Point {
+protected:
+    float x, y;
+public:
+    Point(float x = 0, float y = 0); //构造函数
+    void display();
+};
+
+Point::Point(float a, float b) : x(a), y(b) {}
+void Point::display() {
+    cout &lt;&lt; &quot;[x, y] = [&quot; &lt;&lt; x &lt;&lt; &quot;, &quot; &lt;&lt; y &lt;&lt; &quot;]&quot; &lt;&lt; endl;
+}
+
+//定义派生类，继承自父类Point
+class Circle : public Point {
+private:
+    float radius;
+public:
+    Circle(float x = 0, float y = 0, float r = 0); //构造函数
+    void display(); //与基类中同名的函数
+};
+
+Circle::Circle(float a, float b, float r) : Point(a, b), radius(r) {}
+void Circle::display() {
+    cout &lt;&lt; &quot;[x, y] = [&quot; &lt;&lt; x &lt;&lt; &quot;, &quot; &lt;&lt; y &lt;&lt; &quot;]; r = &quot; &lt;&lt; radius &lt;&lt; endl;
+    return;
+}
+
+int main() {
+    Point p(1, 1); //定义一个基类对象
+    Circle c(5, 5, 2.5); //定义一个派生类对象
+    Point* pt; //定义一个基类指针
+    pt = &amp;p;  //指针指向基类对象
+    pt-&gt;display(); //调用同名函数
+    pt = &amp;c; //指针指向派生类对象
+    pt-&gt;display(); //调用同名函数
+    return 0;
+}
+</code></pre>
+<ul>
+<li>输出：</li>
+</ul>
+<pre><code class="language-txt">[x,y]=[1,1]
+[x,y]=[5,5]
+</code></pre>
+<ul>
+<li>
+<p>分析输出结果可以发现，第一行调用的基类的成员函数，第二行虽然指针指向了派生类，但由于指针的类型时基类的，调用的依旧是基类的成员函数。如果我们希望指针指向什么类的对象，就调用该类的成员函数，则需要将基类的display函数声明为虚函数。</p>
+</li>
+<li>
+<p>修改代码：</p>
+</li>
+</ul>
+<pre><code class="language-cpp">//定义基类
+class Point {
+protected:
+    float x, y;
+public:
+    Point(float x = 0, float y = 0); //构造函数
+    virtual void display();
+};
+... ...
+</code></pre>
+<ul>
+<li>输出：</li>
+</ul>
+<pre><code class="language-txt">[x,y]=[1,1]
+[x,y]=[5,5]; r=2.5
+</code></pre>
+<ul>
+<li>
+<p>在设定虚函数之前，基类指针本应该指向基类对象，如果指向派生类对象，则必须进行指针类型转换，将派生类的指针转换成基类指针，因此通过该指针也只能调用派生类对象中的基类部分。</p>
+</li>
+<li>
+<p>设定虚函数之后，派生类的基类部分取代了原本基类中的虚函数，因此即使基类指针指向派生类对象，也会调用派生类中的成员函数。</p>
+</li>
+</ul>
+<h3><a id="5%E8%99%9A%E5%87%BD%E6%95%B0%E5%8E%9F%E7%90%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. 虚函数原理</h3>
+<ul>
+<li>虚函数表(vtbl)：是一个数组，每个元素都用来存储虚函数的地址。每个类有一个自己的虚函数表，由于类中虚函数的个数可以在编译时期就能确定，因此虚函数表的大小在编译时期就可以确定。虚函数表是全局共享的，存储在全局数据区，在编译时完成构造，全局可用。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[操作系统]]></title>
+    <link href="https://lancerstadium.github.io/16760073501464.html"/>
+    <updated>2023-02-10T13:35:50+08:00</updated>
+    <id>https://lancerstadium.github.io/16760073501464.html</id>
+    <content type="html"><![CDATA[
+<p><img src="media/16760073501464/16767152530867.jpg" alt="" /></p>
+<ul>
+<li><a href="16766493889743.html">1 概述</a></li>
+<li><a href="16766494855408.html">2 进程管理</a></li>
+<li><a href="16767674190232.html">3 死锁</a></li>
+<li><a href="16767769057697.html">4 内存管理</a></li>
+<li><a href="16767954173913.html">5 设备管理</a></li>
+<li><a href="16767976105145.html">6 链接</a></li>
+</ul>
+<blockquote>
+<p>参考书籍：《Unix环境高级编程》、《Linux多线程服务器端编程》</p>
+</blockquote>
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[1 概述]]></title>
+    <link href="https://lancerstadium.github.io/16766493889743.html"/>
+    <updated>2023-02-17T23:56:28+08:00</updated>
+    <id>https://lancerstadium.github.io/16766493889743.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#1%E6%A6%82%E8%BF%B0">1 概述</a>
+<ul>
+<li><a href="#1-1%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81">1.1 基本特征</a></li>
+<li><a href="#1-2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD">1.2 基本功能</a></li>
+<li><a href="#1-3%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8">1.3 系统调用</a></li>
+<li><a href="#1-4%E5%AE%8F%E5%86%85%E6%A0%B8%E5%92%8C%E5%BE%AE%E5%86%85%E6%A0%B8">1.4 宏内核和微内核</a></li>
+<li><a href="#1-5%E4%B8%AD%E6%96%AD%E5%88%86%E7%B1%BB">1.5 中断分类</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="1-1%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1 基本特征</h3>
+<p>1.并发</p>
+<ul>
+<li><strong>并发</strong>是指宏观上在一段时间内能同时运行多个程序，而<strong>并行</strong>则指同一时刻能运行多个指令。</li>
+<li><strong>并行</strong>需要硬件支持，如多流水线、多核处理器（CPU/GPU）或者分布式计算系统。</li>
+<li>操作系统通过引入进程和线程，使得程序能够<strong>并发运行</strong>。</li>
+</ul>
+<p>2.共享</p>
+<ul>
+<li><strong>共享</strong>是指系统中的资源可以被多个进程共同使用。</li>
+<li>两种共享方式：互斥共享和同时共享。</li>
+<li>互斥共享的资源称为临界资源，例如打印机等，在同一时刻只允许一个进程访问，需要用同步机制来实现互斥访问。</li>
+</ul>
+<p>3.虚拟</p>
+<ul>
+<li><strong>虚拟</strong>技术把一个物理实体转换为多个逻辑实体。</li>
+<li>主要有两种虚拟技术：<strong>时（时间）分复用技术</strong>和<strong>空（空间）分复用技术</strong>。</li>
+<li>多个进程能在同一个处理器上并发执行使用了<strong>时分复用技术</strong>，让每个进程轮流占用处理器，每次只执行一小个时间片并快速切换。</li>
+<li>虚拟内存使用了<strong>空分复用技术</strong>，它将物理内存抽象为地址空间，每个进程都有各自的地址空间。地址空间的页被映射到物理内存，地址空间的页并不需要全部在物理内存中，当使用到一个没有在物理内存的页时，执行页面置换算法，将该页置换到内存中。</li>
+</ul>
+<p>4.异步</p>
+<ul>
+<li>异步指进程不是一次性执行完毕，而是走走停停，以不可知的速度向前推进。</li>
+</ul>
+<h3><a id="1-2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2 基本功能</h3>
+<ol>
+<li>进程管理：进程控制、进程同步、进程通信、死锁处理、处理机调度等。</li>
+<li>内存管理：内存分配、地址映射、内存保护与共享、虚拟内存等。</li>
+<li>文件管理：文件存储空间的管理、目录管理、文件读写管理和保护等。</li>
+<li>设备管理：完成用户的 I/O 请求，方便用户使用各种设备，并提高设备的利用率。主要包括缓冲管理、设备分配、设备处理、虛拟设备等。</li>
+</ol>
+<h3><a id="1-3%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.3 系统调用</h3>
+<ul>
+<li>Linux系统调用：<br />
+<img src="media/16760073501464/20200331233225699.png" alt="20200331233225699" /></li>
+</ul>
+<ol>
+<li>
+<p>进程管理：</p>
+<ul>
+<li>创建进程的系统调用叫fork；</li>
+<li>创建一个新的进程需要老的进程调用fork来实现，其中老的简称叫父进程，新的进程叫子进程</li>
+<li>当父进程调用fork创建进程的时候，子进程将各个子系统为父进程创建的数据结构也全部拷贝了一份；如果不进行特殊处理，父进程和子进程按照相同的程序执行下去，</li>
+<li>需要根据fork系统调用的返回值来判断进程是子进程还是父进程。对于fork系统调用的返回值，如果是子进程返回0，如果是父进程，返回子进程的进程号。</li>
+<li>父进程通过waitpid可以确定子进程的状态，通过将子进程的进程号作为参数传递给waitpid可以得知子进程是否运行完成。</li>
+</ul>
+</li>
+<li>
+<p>内存管理：</p>
+<ul>
+<li>每个进程都有独立的进程内存空间</li>
+<li>内存空间分为：存储代码的代码段和存储进程产生数据的数据段</li>
+<li>对于数据段，局部变量部分执行完某函数就会释放内存，也会有动态内存分配</li>
+<li>进程的内存是在需要的时候进行分配的，其中分配的并不是真实的物理内存，只有在写入数据的时候才会触发中断分配物理内存；</li>
+<li>当分配的内存数量比较小的时候使用brk分配；</li>
+<li>当分配的内存数量大的时候使用mmap分配一块大的内存。</li>
+</ul>
+</li>
+<li>
+<p>文件管理：</p>
+<ul>
+<li>对于已经有的文件使用open打开文件、close关闭文件；</li>
+<li>对于没有的文件使用creat创建文件；</li>
+<li>打开后的文件使用lseek跳到文件的某个位置；</li>
+<li>对文件的内容进行读写，读的系统调用是read、写的系统调用是write；</li>
+<li>切皆文件，启动进程需要的是二进制文件、加载配置是文本文件、访问的是设备文件等；</li>
+<li>每个文件，Linux都会分配一个文件描述符，是一个整数，通过文件描述符可以使用系统调用；</li>
+</ul>
+</li>
+<li>
+<p>信号处理</p>
+<ul>
+<li>当程序遇到异常时需要发送一个signal给系统；</li>
+<li>CTRL+C是一个中断信号，正在执行的命令会退出；</li>
+<li>非法访问内存和硬件故障都会报错；</li>
+<li>用户可以通过kill函数，将一个用户信号发送给另一个进程；</li>
+<li>SIGKILL（用于终止一个进程的信号）和 SIGSTOP（用于中止一个进程的信号）</li>
+<li>每种信号都定义了默认的动作，例如硬件故障，默认终止；也可以提供信号处理函数，可以通过sigaction系统调用，注册一个信号处理函数</li>
+</ul>
+</li>
+<li>
+<p>进程间通讯</p>
+<ul>
+<li>msgget创建一个消息队列；</li>
+<li>msgsnd将消息发送给消息队列；</li>
+<li>消息接收方通过msgrcv从队列中取消息；</li>
+<li>如果交互信息比较多，通过共享内存的方式进行通信，shmget创建共享内存，shmat将共享内存映射到自己的内存空间</li>
+</ul>
+</li>
+<li>
+<p>网络通信</p>
+<ul>
+<li>网络插口：socket</li>
+<li>网络协议：TCP/IP网络协议</li>
+</ul>
+</li>
+<li>
+<p>glibc</p>
+<ul>
+<li>为程序员提供丰富的API，封装了操作系统的系统服务，即系统调用的封装；</li>
+<li>Glibc 下实现的 malloc、calloc、free 等函数用来分配和释放内存，都利用了内核的 sys_brk 的系统调用。</li>
+</ul>
+</li>
+</ol>
+<h3><a id="1-4%E5%AE%8F%E5%86%85%E6%A0%B8%E5%92%8C%E5%BE%AE%E5%86%85%E6%A0%B8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.4 宏内核和微内核</h3>
+<ol>
+<li>
+<p>宏内核：宏内核是将操作系统功能作为一个紧密结合的整体放到内核。由于各模块共享信息，因此有<strong>很高的性能</strong>。</p>
+</li>
+<li>
+<p>微内核：由于操作系统不断复杂，因此将一部分操作系统功能移出内核，从而降低内核的复杂性。移出的部分根据分层的原则划分成若干服务，相互独立。在微内核结构下，操作系统被划分成小的、定义良好的模块，只有微内核这一个模块运行在内核态，其余模块运行在用户态。因为需要频繁地在用户态和核心态之间进行切换，所以会<strong>有一定的性能损失</strong>。<br />
+<img src="media/16760073501464/16766366968104.jpg" alt="" /></p>
+</li>
+</ol>
+<h3><a id="1-5%E4%B8%AD%E6%96%AD%E5%88%86%E7%B1%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.5 中断分类</h3>
+<ol>
+<li>
+<p>外中断：由 CPU 执行指令以外的事件引起，如 I/O 完成中断，表示设备输入/输出处理已经完成，处理器能够发送下一个输入/输出请求。此外还有时钟中断、控制台中断等。</p>
+</li>
+<li>
+<p>异常：由 CPU 执行指令的内部事件引起，如非法操作码、地址越界、算术溢出等。</p>
+</li>
+<li>
+<p>陷入：在用户程序中使用系统调用。</p>
+</li>
+</ol>
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2 进程管理]]></title>
+    <link href="https://lancerstadium.github.io/16766494855408.html"/>
+    <updated>2023-02-17T23:58:05+08:00</updated>
+    <id>https://lancerstadium.github.io/16766494855408.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#2%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86">2 进程管理</a>
+<ul>
+<li><a href="#2-1%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B">2.1 进程与线程</a></li>
+<li><a href="#2-2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E7%9A%84%E5%88%87%E6%8D%A2">2.2 进程状态的切换</a></li>
+<li><a href="#2-3%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95">2.3 进程调度算法</a>
+<ul>
+<li><a href="#a%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F">a 批处理系统</a></li>
+<li><a href="#b%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F">b 交互式系统</a></li>
+<li><a href="#c%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F">c 实时系统</a></li>
+</ul>
+</li>
+<li><a href="#2-4%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5">2.4 进程同步</a>
+<ul>
+<li><a href="#a%E4%B8%B4%E7%95%8C%E5%8C%BA">a 临界区</a></li>
+<li><a href="#b%E5%90%8C%E6%AD%A5%E4%B8%8E%E4%BA%92%E6%96%A5">b 同步与互斥</a></li>
+<li><a href="#c%E4%BF%A1%E5%8F%B7%E9%87%8F">c 信号量</a></li>
+<li><a href="#d%E7%AE%A1%E7%A8%8B">d 管程</a></li>
+</ul>
+</li>
+<li><a href="#2-5%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98">2.5 经典同步问题</a>
+<ul>
+<li><a href="#a%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98">a 生产者-消费者问题</a></li>
+<li><a href="#b%E5%93%B2%E5%AD%A6%E5%AE%B6%E8%BF%9B%E9%A4%90%E9%97%AE%E9%A2%98">b 哲学家进餐问题</a></li>
+<li><a href="#c%E8%AF%BB%E8%80%85%E5%86%99%E8%80%85%E9%97%AE%E9%A2%98">c 读者-写者问题</a></li>
+</ul>
+</li>
+<li><a href="#2-6%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1">2.6 进程通信</a>
+<ul>
+<li><a href="#a%E7%AE%A1%E9%81%93">a 管道</a></li>
+<li><a href="#b-fifo">b FIFO</a></li>
+<li><a href="#c%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97">c 消息队列</a></li>
+<li><a href="#d%E5%85%B6%E4%BB%96%E6%A6%82%E5%BF%B5">d 其他概念</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="2-1%E8%BF%9B%E7%A8%8B%E4%B8%8E%E7%BA%BF%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.1 进程与线程</h3>
+<ol>
+<li>
+<p>进程</p>
+<ul>
+<li>进程是资源分配的基本单位。</li>
+<li>进程控制块（<em>Process Control Block, PCB</em>）描述进程的基本信息和运行状态，所谓的创建进程和撤销进程，都是指对PCB的操作。</li>
+<li>下图显示了4个程序创建4个进程，这4个进程可以并发地执行。<br />
+<img src="media/16760073501464/16766417636021.png" alt="" /></li>
+</ul>
+</li>
+<li>
+<p>线程</p>
+<ul>
+<li>线程是独立调度基本单位。</li>
+<li>一个进程中可以有多个线程，它们共享进程资源。</li>
+<li>QQ与浏览器是两个进程，浏览器进程内部有很多线程，如：HTTP请求线程、事件响应线程、渲染线程等等，线程的兵法执行使得在浏览器中点击一个新链接从而发起HTTP请求时，浏览器还可以响应用户的其他事件。<br />
+<img src="media/16760073501464/16766420620848.png" alt="" /></li>
+</ul>
+</li>
+<li>
+<p>区别</p>
+</li>
+</ol>
+<ul>
+<li>是否拥有资源：进程是资源分配的基本单位，但是线程不拥有资源，线程可以访问隶属进程的资源。</li>
+<li>调度：线程是独立调度的基本单位，在同一进程中，线程的切换不会引起进程切换，从一个进程中的线程切换到另一个进程中的线程时，会引起进程切换。</li>
+<li>系统开销：由于<strong>创建或撤销进程</strong>时，系统都要为之分配或回收资源，如内存空间、I/O 设备等，所付出的开销远大于创建或撤销线程时的开销。类似地，在进行进程切换时，涉及当前执行进程 CPU 环境的保存及新调度进程 CPU 环境的设置，而线程切换时只需保存和设置少量寄存器内容，开销很小。</li>
+<li>通信方面：线程间可以通过直接读写同一进程中的数据进行通信，但是进程通信需要借助 IPC。</li>
+</ul>
+<h3><a id="2-2%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81%E7%9A%84%E5%88%87%E6%8D%A2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.2 进程状态的切换</h3>
+<ul>
+<li>
+<p>进程状态图：<br />
+<img src="media/16760073501464/16766468369592.png" alt="" /></p>
+</li>
+<li>
+<p>就绪状态（ready）：等待被调度</p>
+</li>
+<li>
+<p>运行状态（running）</p>
+</li>
+<li>
+<p>阻塞状态（waiting）：等待资源</p>
+</li>
+</ul>
+<blockquote>
+<p>注意：</p>
+<ul>
+<li><strong>只有就绪态和运行态可以相互转换，其它的都是单向转换</strong>。就绪状态的进程通过调度算法从而获得 CPU 时间，转为运行状态；而运行状态的进程，在分配给它的 CPU 时间片用完之后就会转为就绪状态，等待下一次调度。</li>
+<li>阻塞状态是缺少需要的资源从而由运行状态转换而来，但是<strong>该资源不包括 CPU 时间</strong>，缺少 CPU 时间会从运行态转换为就绪态。</li>
+</ul>
+</blockquote>
+<h3><a id="2-3%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.3 进程调度算法</h3>
+<ul>
+<li>不同环境的调度算法目标不同，因此需要针对不同环境来讨论调度算法。</li>
+</ul>
+<h4><a id="a%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 批处理系统</h4>
+<blockquote>
+<p>批处理系统没有太多的用户操作，在该系统中，调度算法目标是保证吞吐量和周转时间（从提交到终止的时间）。</p>
+</blockquote>
+<p>1.先来先服务FCFS(first-come first-serverd)</p>
+<ul>
+<li>非抢占式的调度算法，按照请求的顺序进行调度。</li>
+<li>有<strong>利于长作业</strong>，但<strong>不利于短作业</strong>，因为短作业必须一直等待前面的长作业执行完毕才能执行，而长作业又需要执行很长时间，造成了短作业等待时间过长。</li>
+</ul>
+<p>2.短作业有限SJF(shortest job first)</p>
+<ul>
+<li>非抢占式的调度算法，按估计运行时间最短的顺序进行调度。</li>
+<li>长作业有可能会饿死，处于一直等待短作业执行完毕的状态。因为如果一直有短作业到来，那么长作业永远得不到调度。</li>
+</ul>
+<p>3.最短剩余时间有限SRTX(shortest remaining time next)</p>
+<ul>
+<li>最短作业优先的抢占式版本，按剩余运行时间的顺序进行调度。 当一个新的作业到达时，其整个运行时间与当前进程的剩余时间作比较。如果新的进程需要的时间更少，则挂起当前进程，运行新的进程。否则新的进程等待。</li>
+</ul>
+<h4><a id="b%E4%BA%A4%E4%BA%92%E5%BC%8F%E7%B3%BB%E7%BB%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 交互式系统</h4>
+<blockquote>
+<p>交互式系统有大量的用户交互操作，在该系统中调度算法的目标是快速地进行响应。</p>
+</blockquote>
+<p>1.时间片轮转</p>
+<ul>
+<li>将所有就绪进程按 FCFS 的原则排成一个队列，每次调度时，把 CPU 时间分配给队首进程，该进程可以执行一个时间片。当时间片用完时，由计时器发出时钟中断，调度程序便停止该进程的执行，并将它送往就绪队列的末尾，同时继续把 CPU 时间分配给队首的进程。</li>
+<li>时间片轮转算法的效率和时间片的大小有很大关系：
+<ul>
+<li>因为进程切换都要保存进程的信息并且载入新进程的信息，如果时间片太小，会导致进程切换得太频繁，在进程切换上就会花过多时间。</li>
+<li>而如果时间片过长，那么实时性就不能得到保证。<br />
+<img src="media/16766494855408/16767666265533.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+<p>2.优先级调度</p>
+<ul>
+<li>为每个进程分配一个优先级，按优先级进行调度。</li>
+<li>为了防止低优先级的进程永远等不到调度，可以随着时间的推移增加等待进程的优先级。</li>
+</ul>
+<p>3.多级反馈队列</p>
+<ul>
+<li>一个进程需要执行 100 个时间片，如果采用时间片轮转调度算法，那么需要交换 100 次。</li>
+<li>多级队列是为这种需要连续执行多个时间片的进程考虑，它设置了多个队列，每个队列时间片大小都不同，例如 1,2,4,8,..。进程在第一个队列没执行完，就会被移到下一个队列。这种方式下，之前的进程只需要交换 7 次。</li>
+<li>每个队列优先权也不同，最上面的优先权最高。因此只有上一个队列没有进程在排队，才能调度当前队列上的进程。</li>
+<li>可以将这种调度算法看成是时间片轮转调度算法和优先级调度算法的结合。</li>
+</ul>
+<h4><a id="c%E5%AE%9E%E6%97%B6%E7%B3%BB%E7%BB%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 实时系统</h4>
+<ul>
+<li>实时系统要求一个请求在一个确定时间内得到响应。</li>
+<li>分为硬实时和软实时，前者必须满足绝对的截止时间，后者可以容忍一定的超时。</li>
+</ul>
+<h3><a id="2-4%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.4 进程同步</h3>
+<h4><a id="a%E4%B8%B4%E7%95%8C%E5%8C%BA" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 临界区</h4>
+<ul>
+<li>对临界资源进行访问的那段代码称为临界区。</li>
+<li>为了互斥访问临界资源，每个进程在进入临界区之前，需要先进行检查。</li>
+</ul>
+<pre><code class="language-plain_text">// entry section
+// critical section
+// exit section
+</code></pre>
+<h4><a id="b%E5%90%8C%E6%AD%A5%E4%B8%8E%E4%BA%92%E6%96%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 同步与互斥</h4>
+<ul>
+<li>同步：多个进程因为合作产生的<strong>直接制约关系</strong>，使得进程有一<strong>定的先后执行关系</strong>。</li>
+<li>互斥：多个进程在同一时刻<strong>只有一个进程能进入临界区</strong>。</li>
+</ul>
+<h4><a id="c%E4%BF%A1%E5%8F%B7%E9%87%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 信号量</h4>
+<ul>
+<li>信号量(<em>Semaphore</em>)是一个整型变量，可以对其执行 down 和 up 操作，也就是常见的 P 和 V 操作。
+<ul>
+<li>down : 如果信号量大于 0 ，执行 -1 操作；如果信号量等于 0，进程睡眠，等待信号量大于 0；</li>
+<li>up ：对信号量执行 +1 操作，唤醒睡眠的进程让其完成 down 操作。</li>
+</ul>
+</li>
+<li>down 和 up 操作需要被设计成原语，不可分割，通常的做法是在执行这些操作的时候屏蔽中断。</li>
+<li>如果信号量的取值只能为 0 或者 1，那么就成为了 互斥量(<em>Mutex</em>) ，0 表示临界区已经加锁，1 表示临界区解锁。</li>
+</ul>
+<pre><code class="language-cpp">typedef int semaphore;
+semaphore mutex = 1;
+void P1() {
+    down(&amp;mutex);
+    // 临界区
+    up(&amp;mutex);
+}
+void P2() {
+    down(&amp;mutex);
+    // 临界区
+    up(&amp;mutex);
+}
+</code></pre>
+<h4><a id="d%E7%AE%A1%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>d 管程</h4>
+<ul>
+<li>使用信号量机制实现的生产者消费者问题需要客户端代码做很多控制，而管程把控制的代码独立出来，不仅不容易出错，也使得客户端代码调用更容易。</li>
+<li>c 语言不支持管程，下面的示例代码使用了类 Pascal 语言来描述管程。示例代码的管程提供了 <code>insert()</code> 和 <code>remove()</code> 方法，客户端代码通过调用这两个方法来解决生产者-消费者问题。</li>
+</ul>
+<pre><code class="language-pascal">monitor ProducerConsumer
+    integer i;
+    condition c;
+
+    procedure insert();
+    begin
+        // ...
+    end;
+
+    procedure remove();
+    begin
+        // ...
+    end;
+end monitor;
+
+</code></pre>
+<ul>
+<li>管程有一个<strong>重要特性</strong>：在一个时刻只能有一个进程使用管程。进程在无法继续执行的时候不能一直占用管程，否则其它进程永远不能使用管程。</li>
+<li>管程引入了<strong>条件变量</strong>以及相关的操作：wait() 和 signal() 来实现同步操作。对条件变量执行 wait() 操作会导致调用进程阻塞，把管程让出来给另一个进程持有。signal() 操作用于唤醒被阻塞的进程。</li>
+<li>管程实现生产者消费者问题：</li>
+</ul>
+<pre><code class="language-pascal">// 管程
+monitor ProducerConsumer
+    condition full, empty;
+    integer count := 0;
+    condition c;
+
+    procedure insert(item: integer);
+    begin
+        if count = N then wait(full);
+        insert_item(item);
+        count := count + 1;
+        if count = 1 then signal(empty);
+    end;
+
+    function remove: integer;
+    begin
+        if count = 0 then wait(empty);
+        remove = remove_item;
+        count := count - 1;
+        if count = N -1 then signal(full);
+    end;
+end monitor;
+
+// 生产者客户端
+procedure producer
+begin
+    while true do
+    begin
+        item = produce_item;
+        ProducerConsumer.insert(item);
+    end
+end;
+
+// 消费者客户端
+procedure consumer
+begin
+    while true do
+    begin
+        item = ProducerConsumer.remove;
+        consume_item(item);
+    end
+end;
+
+</code></pre>
+<h3><a id="2-5%E7%BB%8F%E5%85%B8%E5%90%8C%E6%AD%A5%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.5 经典同步问题</h3>
+<h4><a id="a%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 生产者-消费者问题</h4>
+<ul>
+<li>问题描述：使用一个缓冲区（内含N个位置）来保存物品，只有缓冲区没有满，生产者才可以放入物品；只有缓冲区不为空，消费者才可以拿走物品。</li>
+<li>思想：
+<ul>
+<li>因为缓冲区属于临界资源，因此需要使用一个互斥量 mutex 来控制对缓冲区的互斥访问。</li>
+<li>为了同步生产者和消费者的行为，需要记录缓冲区中物品的数量。数量可以使用信号量来进行统计，这里需要使用两个信号量：empty 记录空缓冲区的数量，full 记录满缓冲区的数量。其中，empty 信号量是在生产者进程中使用，当 empty 不为 0 时，生产者才可以放入物品；full 信号量是在消费者进程中使用，当 full 信号量不为 0 时，消费者才可以取走物品。</li>
+<li>注意，不能先对缓冲区进行加锁，再测试信号量。也就是说，不能先执行 down(mutex) 再执行 down(empty)。如果这么做了，那么可能会出现这种情况：生产者对缓冲区加锁后，执行 down(empty) 操作，发现 empty = 0，此时生产者睡眠。消费者不能进入临界区，因为生产者对缓冲区加锁了，消费者就无法执行 up(empty) 操作，empty 永远都为 0，导致生产者永远等待下，不会释放锁，消费者因此也会永远等待下去。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-cpp">#define N 100
+typedef int semaphore;
+semaphore mutex = 1;
+semaphore empty = N;
+semaphore full = 0;
+
+void producer() {
+    while(TRUE) {
+        int item = produce_item();
+        down(&amp;empty);
+        down(&amp;mutex);
+        insert_item(item);
+        up(&amp;mutex);
+        up(&amp;full);
+    }
+}
+
+void consumer() {
+    while(TRUE) {
+        down(&amp;full);
+        down(&amp;mutex);
+        int item = remove_item();
+        consume_item(item);
+        up(&amp;mutex);
+        up(&amp;empty);
+    }
+}
+</code></pre>
+<h4><a id="b%E5%93%B2%E5%AD%A6%E5%AE%B6%E8%BF%9B%E9%A4%90%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 哲学家进餐问题</h4>
+<ul>
+<li>问题描述：五个哲学家围着一张圆桌，每个哲学家面前放着食物。哲学家的生活有两种交替活动：吃饭以及思考。当一个哲学家吃饭时，需要先拿起自己左右两边的两根筷子，并且一次只能拿起一根筷子。<img src="media/16766494855408/16767703377832.jpg" alt="" /></li>
+<li>下面是一种错误的解法，如果所有哲学家同时拿起左手边的筷子，那么所有哲学家都在等待其它哲学家吃完并释放自己手中的筷子，导致<strong>死锁</strong>。</li>
+</ul>
+<pre><code class="language-cpp">#define N 5
+
+void philosopher(int i) {
+    while(TRUE) {
+        think();
+        take(i);       // 拿起左边的筷子
+        take((i+1)%N); // 拿起右边的筷子
+        eat();
+        put(i);
+        put((i+1)%N);
+    }
+}
+</code></pre>
+<ul>
+<li>为了防止死锁的发生，可以设置两个条件：
+<ul>
+<li>必须同时拿起左右两根筷子；</li>
+<li>只有在两个邻居都没有进餐的情况下才允许进餐。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-cpp">#define N 5
+#define LEFT (i + N - 1) % N // 左邻居
+#define RIGHT (i + 1) % N    // 右邻居
+#define THINKING 0
+#define HUNGRY   1
+#define EATING   2
+typedef int semaphore;
+int state[N];                // 跟踪每个哲学家的状态
+semaphore mutex = 1;         // 临界区的互斥，临界区是 state 数组，对其修改需要互斥
+semaphore s[N];              // 每个哲学家一个信号量
+
+void philosopher(int i) {
+    while(TRUE) {
+        think(i);
+        take_two(i);
+        eat(i);
+        put_two(i);
+    }
+}
+
+void take_two(int i) {
+    down(&amp;mutex);
+    state[i] = HUNGRY;
+    check(i);
+    up(&amp;mutex);
+    down(&amp;s[i]); // 只有收到通知之后才可以开始吃，否则会一直等下去
+}
+
+void put_two(i) {
+    down(&amp;mutex);
+    state[i] = THINKING;
+    check(LEFT); // 尝试通知左右邻居，自己吃完了，你们可以开始吃了
+    check(RIGHT);
+    up(&amp;mutex);
+}
+
+void eat(int i) {
+    down(&amp;mutex);
+    state[i] = EATING;
+    up(&amp;mutex);
+}
+
+// 检查两个邻居是否都没有用餐，如果是的话，就 up(&amp;s[i])，使得 down(&amp;s[i]) 能够得到通知并继续执行
+void check(i) {         
+    if(state[i] == HUNGRY &amp;&amp; state[LEFT] != EATING &amp;&amp; state[RIGHT] !=EATING) {
+        state[i] = EATING;
+        up(&amp;s[i]);
+    }
+}
+</code></pre>
+<h4><a id="c%E8%AF%BB%E8%80%85%E5%86%99%E8%80%85%E9%97%AE%E9%A2%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 读者-写者问题</h4>
+<ul>
+<li>问题描述：允许多个进程同时对数据进行读操作，但是不允许读和写以及写和写操作同时发生。</li>
+<li>一个整型变量 count 记录在对数据进行读操作的进程数量，一个互斥量 count_mutex 用于对 count 加锁，一个互斥量 data_mutex 用于对读写的数据加锁。</li>
+</ul>
+<pre><code class="language-cpp">typedef int semaphore;
+semaphore count_mutex = 1;
+semaphore data_mutex = 1;
+int count = 0;
+
+void reader() {
+    while(TRUE) {
+        down(&amp;count_mutex);
+        count++;
+        if(count == 1) down(&amp;data_mutex); // 第一个读者需要对数据进行加锁，防止写进程访问
+        up(&amp;count_mutex);
+        read();
+        down(&amp;count_mutex);
+        count--;
+        if(count == 0) up(&amp;data_mutex);
+        up(&amp;count_mutex);
+    }
+}
+
+void writer() {
+    while(TRUE) {
+        down(&amp;data_mutex);
+        write();
+        up(&amp;data_mutex);
+    }
+}
+</code></pre>
+<h3><a id="2-6%E8%BF%9B%E7%A8%8B%E9%80%9A%E4%BF%A1" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.6 进程通信</h3>
+<ul>
+<li>进程同步与进程通信很容易混淆，它们的区别在于：
+<ul>
+<li>进程同步：控制多个进程按一定顺序执行；</li>
+<li>进程通信：进程间传输信息。</li>
+</ul>
+</li>
+<li>进程通信是一种手段，而进程同步是一种目的。也可以说，为了能够达到进程同步的目的，需要让进程进行通信，传输一些进程同步所需要的信息。</li>
+</ul>
+<h4><a id="a%E7%AE%A1%E9%81%93" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 管道</h4>
+<pre><code class="language-cpp">#include &lt;unistd.h&gt;
+int pipe(int fd[2]);
+</code></pre>
+<ul>
+<li>它具有以下限制：
+<ul>
+<li>只支持半双工通信（单向交替传输）；</li>
+<li>只能在父子进程或者兄弟进程中使用。<br />
+<img src="media/16766494855408/16767714720381.png" alt="" /></li>
+</ul>
+</li>
+</ul>
+<h4><a id="b-fifo" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b FIFO</h4>
+<ul>
+<li>也称为命名管道，去除了管道只能在父子进程中使用的限制。</li>
+</ul>
+<pre><code class="language-cpp">#include &lt;sys/stat.h&gt;
+int mkfifo(const char *path, mode_t mode);
+int mkfifoat(int fd, const char *path, mode_t mode);
+</code></pre>
+<ul>
+<li>FIFO 常用于客户-服务器应用程序中，FIFO 用作汇聚点，在客户进程和服务器进程之间传递数据。<img src="media/16766494855408/16767723575708.png" alt="" /></li>
+</ul>
+<h4><a id="c%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 消息队列</h4>
+<ul>
+<li>相比于 FIFO，消息队列具有以下优点：
+<ul>
+<li>消息队列可以独立于读写进程存在，从而避免了 FIFO 中同步管道的打开和关闭时可能产生的困难；</li>
+<li>避免了 FIFO 的同步阻塞问题，不需要进程自己提供同步方法；</li>
+<li>读进程可以根据消息类型有选择地接收消息，而不像 FIFO 那样只能默认地接收。</li>
+</ul>
+</li>
+</ul>
+<h4><a id="d%E5%85%B6%E4%BB%96%E6%A6%82%E5%BF%B5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>d 其他概念</h4>
+<ul>
+<li>信号量：它是一个计数器，用于为多个进程提供对共享数据对象的访问。</li>
+<li>共享存储：允许多个进程共享一个给定的存储区。因为数据不需要在进程之间复制，所以这是最快的一种 IPC。需要使用信号量用来同步对共享存储的访问。多个进程可以将同一个文件映射到它们的地址空间从而实现共享内存。另外 XSI 共享内存不是使用文件，而是使用内存的匿名段。</li>
+<li>套接字：与其它通信机制不同的是，它可用于不同机器间的进程通信。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3 死锁]]></title>
+    <link href="https://lancerstadium.github.io/16767674190232.html"/>
+    <updated>2023-02-19T08:43:39+08:00</updated>
+    <id>https://lancerstadium.github.io/16767674190232.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#3%E6%AD%BB%E9%94%81">3 死锁</a>
+<ul>
+<li><a href="#3-1%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6">3.1 必要条件</a></li>
+<li><a href="#3-2%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95">3.2 处理方法</a>
+<ul>
+<li><a href="#a%E9%B8%B5%E9%B8%9F%E7%AD%96%E7%95%A5">a 鸵鸟策略</a></li>
+<li><a href="#b%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%AD%BB%E9%94%81%E6%81%A2%E5%A4%8D">b 死锁检测与死锁恢复</a>
+<ul>
+<li><a href="#1%E6%AF%8F%E7%A7%8D%E7%B1%BB%E5%9E%8B%E4%B8%80%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B">1.每种类型一个资源的死锁检测</a></li>
+<li><a href="#2%E6%AF%8F%E7%A7%8D%E7%B1%BB%E5%9E%8B%E5%A4%9A%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B">2.每种类型多个资源的死锁检测</a></li>
+<li><a href="#3%E6%AD%BB%E9%94%81%E6%81%A2%E5%A4%8D">3.死锁恢复</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-3%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2">3.3 死锁预防</a>
+<ul>
+<li><a href="#1%E7%A0%B4%E5%9D%8F%E4%BA%92%E6%96%A5%E6%9D%A1%E4%BB%B6">1.破坏互斥条件</a></li>
+<li><a href="#2%E7%A0%B4%E5%9D%8F%E5%8D%A0%E6%9C%89%E5%92%8C%E7%AD%89%E5%BE%85%E6%9D%A1%E4%BB%B6">2.破坏占有和等待条件</a></li>
+<li><a href="#3%E7%A0%B4%E5%9D%8F%E4%B8%8D%E5%8F%AF%E6%8A%A2%E5%8D%A0%E6%9D%A1%E4%BB%B6">3. 破坏不可抢占条件</a></li>
+<li><a href="#4%E7%A0%B4%E5%9D%8F%E7%8E%AF%E8%B7%AF%E7%AD%89%E5%BE%85">4.破坏环路等待</a></li>
+</ul>
+</li>
+<li><a href="#3-4%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D">3.4 死锁避免</a>
+<ul>
+<li><a href="#a%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81">a 安全状态</a></li>
+<li><a href="#b%E5%8D%95%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95">b 单个资源的银行家算法</a></li>
+<li><a href="#c%E5%A4%9A%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95">c 多个资源的银行家算法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2><a id="3-1%E5%BF%85%E8%A6%81%E6%9D%A1%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.1 必要条件</h2>
+<p><img src="media/16767674190232/16767740160709.png" alt="" /></p>
+<ul>
+<li>互斥：每个资源要么已经分配给了一个进程，要么就是可用的。</li>
+<li>占有和等待：已经得到了某个资源的进程可以再请求新的资源。</li>
+<li>不可抢占：已经分配给一个进程的资源不能强制性地被抢占，它只能被占有它的进程显式地释放。</li>
+<li>环路等待：有两个或者两个以上的进程组成一条环路，该环路中的每个进程都在等待下一个进程所占有的资源。</li>
+</ul>
+<h2><a id="3-2%E5%A4%84%E7%90%86%E6%96%B9%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.2 处理方法</h2>
+<h3><a id="a%E9%B8%B5%E9%B8%9F%E7%AD%96%E7%95%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 鸵鸟策略</h3>
+<ul>
+<li>把头埋在沙子里，假装根本没发生问题。</li>
+<li>因为解决死锁问题的代价很高，因此鸵鸟策略这种不采取任务措施的方案会获得更高的性能。</li>
+<li>当发生死锁时不会对用户造成多大影响，或发生死锁的概率很低，可以采用鸵鸟策略。</li>
+<li>大多数操作系统，包括 Unix，Linux 和 Windows，处理死锁问题的办法仅仅是忽略它。</li>
+</ul>
+<h3><a id="b%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B%E4%B8%8E%E6%AD%BB%E9%94%81%E6%81%A2%E5%A4%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 死锁检测与死锁恢复</h3>
+<ul>
+<li>不试图阻止死锁，而是当检测到死锁发生时，采取措施进行恢复。</li>
+</ul>
+<h4><a id="1%E6%AF%8F%E7%A7%8D%E7%B1%BB%E5%9E%8B%E4%B8%80%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.每种类型一个资源的死锁检测</h4>
+<p><img src="media/16767674190232/16767750185273.png" alt="" /></p>
+<ul>
+<li>上图为资源分配图，其中方框表示资源，圆圈表示进程。资源指向进程表示该资源已经分配给该进程，进程指向资源表示进程请求获取该资源。</li>
+<li>图 a 可以抽取出环，如图 b，它满足了环路等待条件，因此会发生死锁。</li>
+<li>每种类型一个资源的死锁检测算法是通过检测有向图是否存在环来实现，从一个节点出发进行深度优先搜索，对访问过的节点进行标记，如果访问了已经标记的节点，就表示有向图存在环，也就是检测到死锁的发生。</li>
+</ul>
+<h4><a id="2%E6%AF%8F%E7%A7%8D%E7%B1%BB%E5%9E%8B%E5%A4%9A%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E6%AD%BB%E9%94%81%E6%A3%80%E6%B5%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.每种类型多个资源的死锁检测</h4>
+<p><img src="media/16767674190232/16767751734227.png" alt="" /></p>
+<ul>
+<li>上图中，有三个进程四个资源，每个数据代表的含义如下：
+<ul>
+<li>E 向量：资源总量</li>
+<li>A 向量：资源剩余量</li>
+<li>C 矩阵：每个进程所拥有的资源数量，每一行都代表一个进程拥有资源的数量</li>
+<li>R 矩阵：每个进程请求的资源数量</li>
+</ul>
+</li>
+<li>进程 P1 和 P2 所请求的资源都得不到满足，只有进程 P3 可以，让 P3 执行，之后释放 P3 拥有的资源，此时 A = (2 2 2 0)。P2 可以执行，执行后释放 P2 拥有的资源，A = (4 2 2 1) 。P1 也可以执行。所有进程都可以顺利执行，没有死锁。</li>
+<li>算法总结如下：每个进程最开始时都不被标记，执行过程有可能被标记。当算法结束时，任何没有被标记的进程都是死锁进程。
+<ol>
+<li>寻找一个没有标记的进程 Pi，它所请求的资源小于等于 A。</li>
+<li>如果找到了这样一个进程，那么将 C 矩阵的第 i 行向量加到 A 中，标记该进程，并转回 1。</li>
+<li>如果没有这样一个进程，算法终止。</li>
+</ol>
+</li>
+</ul>
+<h4><a id="3%E6%AD%BB%E9%94%81%E6%81%A2%E5%A4%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.死锁恢复</h4>
+<ul>
+<li>利用抢占恢复</li>
+<li>利用回滚恢复</li>
+<li>通过杀死进程恢复</li>
+</ul>
+<h2><a id="3-3%E6%AD%BB%E9%94%81%E9%A2%84%E9%98%B2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.3 死锁预防</h2>
+<blockquote>
+<p>破坏四大条件之一，在程序运行之前预防发生死锁。</p>
+</blockquote>
+<h3><a id="1%E7%A0%B4%E5%9D%8F%E4%BA%92%E6%96%A5%E6%9D%A1%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.破坏互斥条件</h3>
+<ul>
+<li>例如假脱机打印机技术允许若干个进程同时输出，唯一真正请求物理打印机的进程是打印机守护进程。</li>
+</ul>
+<h3><a id="2%E7%A0%B4%E5%9D%8F%E5%8D%A0%E6%9C%89%E5%92%8C%E7%AD%89%E5%BE%85%E6%9D%A1%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2.破坏占有和等待条件</h3>
+<ul>
+<li>一种实现方式是规定所有进程在开始执行前请求所需要的全部资源。</li>
+</ul>
+<h3><a id="3%E7%A0%B4%E5%9D%8F%E4%B8%8D%E5%8F%AF%E6%8A%A2%E5%8D%A0%E6%9D%A1%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. 破坏不可抢占条件</h3>
+<h3><a id="4%E7%A0%B4%E5%9D%8F%E7%8E%AF%E8%B7%AF%E7%AD%89%E5%BE%85" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.破坏环路等待</h3>
+<ul>
+<li>给资源统一编号，进程只能按编号顺序来请求资源。</li>
+</ul>
+<h2><a id="3-4%E6%AD%BB%E9%94%81%E9%81%BF%E5%85%8D" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.4 死锁避免</h2>
+<blockquote>
+<p>在程序运行时避免发生死锁。</p>
+</blockquote>
+<h3><a id="a%E5%AE%89%E5%85%A8%E7%8A%B6%E6%80%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 安全状态</h3>
+<ul>
+<li>图 a 的第二列 Has 表示已拥有的资源数，第三列 Max 表示总共需要的资源数，Free 表示还有可以使用的资源数。从图 a 开始出发，先让 B 拥有所需的所有资源（图 b），运行结束后释放 B，此时 Free 变为 5（图 c）；接着以同样的方式运行 C 和 A，使得所有进程都能成功运行，因此可以称图 a 所示的状态时安全的。<br />
+<img src="media/16767674190232/16767763597946.png" alt="" /></li>
+<li>定义：如果没有死锁发生，并且即使所有进程突然请求对资源的最大需求，也仍然存在某种调度次序能够使得每一个进程运行完毕，则称该状态是安全的。</li>
+<li>安全状态的检测与死锁的检测类似，因为安全状态必须要求不能发生死锁。下面的银行家算法与死锁检测算法非常类似，可以结合着做参考对比。</li>
+</ul>
+<h3><a id="b%E5%8D%95%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 单个资源的银行家算法</h3>
+<ul>
+<li>一个小城镇的银行家，他向一群客户分别承诺了一定的贷款额度，算法要做的是判断对请求的满足是否会进入不安全状态，如果是，就拒绝请求；否则予以分配。<br />
+<img src="media/16767674190232/16767764455252.png" alt="" /></li>
+<li>上图 c 为不安全状态，因此算法会拒绝之前的请求，从而避免进入图 c 中的状态。</li>
+</ul>
+<h3><a id="c%E5%A4%9A%E4%B8%AA%E8%B5%84%E6%BA%90%E7%9A%84%E9%93%B6%E8%A1%8C%E5%AE%B6%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 多个资源的银行家算法</h3>
+<ul>
+<li>图中有五个进程，四个资源。左边的图表示已经分配的资源，右边的图表示还需要分配的资源。最右边的 E、P 以及 A 分别表示：总资源、已分配资源以及可用资源，注意这三个为向量，而不是具体数值，例如 A=(1020)，表示 4 个资源分别还剩下 1/0/2/0。<br />
+<img src="media/16767674190232/16767765191410.png" alt="" /></li>
+<li>检查一个状态是否安全的算法如下：
+<ul>
+<li>查找右边的矩阵是否存在一行小于等于向量 A。如果不存在这样的行，那么系统将会发生死锁，状态是不安全的。</li>
+<li>假若找到这样一行，将该进程标记为终止，并将其已分配资源加到 A 中。</li>
+<li>重复以上两步，直到所有进程都标记为终止，则状态时安全的。</li>
+</ul>
+</li>
+<li>如果一个状态不是安全的，需要拒绝进入这个状态。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[4 内存管理]]></title>
+    <link href="https://lancerstadium.github.io/16767769057697.html"/>
+    <updated>2023-02-19T11:21:45+08:00</updated>
+    <id>https://lancerstadium.github.io/16767769057697.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#4%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86">4 内存管理</a>
+<ul>
+<li><a href="#4-1%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98">4.1 虚拟内存</a></li>
+<li><a href="#4-2%E5%88%86%E9%A1%B5%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84">4.2 分页系统地址映射</a></li>
+<li><a href="#4-3%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95">4.3 页面置换算法</a>
+<ul>
+<li><a href="#a%E6%9C%80%E4%BD%B3-opt-optimal-replacement-algorithm">a 最佳OPT(Optimal replacement algorithm)</a></li>
+<li><a href="#b%E6%9C%80%E8%BF%91%E6%9C%80%E4%B9%85%E6%9C%AA%E4%BD%BF%E7%94%A8-lru-least-recently-used">b 最近最久未使用LRU(Least Recently Used)</a></li>
+<li><a href="#c%E6%9C%80%E8%BF%91%E6%9C%AA%E4%BD%BF%E7%94%A8-nru-not-recently-used">c 最近未使用NRU(Not Recently Used)</a></li>
+<li><a href="#d%E5%85%88%E8%BF%9B%E5%85%88%E5%87%BA-fifo">d 先进先出FIFO</a></li>
+<li><a href="#e%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%BA%E4%BC%9A%E7%AE%97%E6%B3%95">e 第二次机会算法</a></li>
+<li><a href="#f%E6%97%B6%E9%92%9F-clock">f 时钟clock</a></li>
+</ul>
+</li>
+<li><a href="#4-4%E5%88%86%E6%AE%B5">4.4 分段</a></li>
+<li><a href="#4-5%E6%AE%B5%E9%A1%B5%E5%BC%8F">4.5 段页式</a></li>
+<li><a href="#4-6%E5%88%86%E9%A1%B5%E4%B8%8E%E5%88%86%E6%AE%B5%E7%9A%84%E6%AF%94%E8%BE%83">4.6 分页与分段的比较</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2><a id="4-1%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.1 虚拟内存</h2>
+<ul>
+<li>虚拟内存的目的是为了让物理内存扩充成更大的逻辑内存，从而让程序获得更多的可用内存。</li>
+<li>为了更好的管理内存，操作系统将内存抽象成地址空间。每个程序拥有自己的地址空间，这个地址空间被分割成多个块，每一块称为一页。这些页被映射到物理内存，但不需要映射到连续的物理内存，也不需要所有页都必须在物理内存中。当程序引用到不在物理内存中的页时，由硬件执行必要的映射，将缺失的部分装入物理内存并重新执行失败的指令。</li>
+<li>从上面的描述中可以看出，虚拟内存允许程序不用将地址空间中的每一页都映射到物理内存，也就是说一个程序不需要全部调入内存就可以运行，这使得有限的内存运行大程序成为可能。例如有一台计算机可以产生 16 位地址，那么一个程序的地址空间范围是 0~64K。该计算机只有 32KB 的物理内存，虚拟内存技术允许该计算机运行一个 64K 大小的程序。<br />
+<img src="media/16767769057697/16767776029328.png" alt="" /></li>
+</ul>
+<h2><a id="4-2%E5%88%86%E9%A1%B5%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.2 分页系统地址映射</h2>
+<ul>
+<li>内存管理单元（MMU）管理着地址空间和物理内存的转换，其中的页表（<em>Page table</em>）存储着页（程序地址空间）和页框（物理内存空间）的映射表。</li>
+<li>一个虚拟地址分成两个部分，一部分存储页面号，一部分存储偏移量。</li>
+<li>下图的页表存放着 16 个页，这 16 个页需要用 4 个比特位来进行索引定位。例如对于虚拟地址（0010 000000000100），前 4 位是存储页面号 2，读取表项内容为（110 1），页表项最后一位表示是否存在于内存中，1 表示存在。后 12 位存储偏移量。这个页对应的页框的地址为 （110 000000000100）。<br />
+<img src="media/16767769057697/16767779413616.png" alt="" /></li>
+</ul>
+<h2><a id="4-3%E9%A1%B5%E9%9D%A2%E7%BD%AE%E6%8D%A2%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.3 页面置换算法</h2>
+<ul>
+<li>在程序运行过程中，如果要访问的页面不在内存中，就发生缺页中断从而将该页调入内存中。此时如果内存已无空闲空间，系统必须从内存中调出一个页面到磁盘对换区中来腾出空间。</li>
+<li>页面置换算法和缓存淘汰策略类似，可以将内存看成磁盘的缓存。在缓存系统中，缓存的大小有限，当有新的缓存到达时，需要淘汰一部分已经存在的缓存，这样才有空间存放新的缓存数据。</li>
+<li>页面置换算法的主要目标是使页面置换频率最低（也可以说缺页率最低）。</li>
+</ul>
+<h3><a id="a%E6%9C%80%E4%BD%B3-opt-optimal-replacement-algorithm" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 最佳OPT(Optimal replacement algorithm)</h3>
+<ul>
+<li>所选择的被换出的页面将是最长时间内不再被访问，通常可以保证获得最低的缺页率。</li>
+<li>是一种理论上的算法，因为无法知道一个页面多长时间不再被访问。</li>
+<li>举例：一个系统为某进程分配了三个物理块，并有如下页面引用序列：</li>
+</ul>
+<pre><code class="language-plain_text">7，0，1，2，0，3，0，4，2，3，0，3，2，1，2，0，1，7，0，1
+</code></pre>
+<ul>
+<li>开始运行时，先将 7, 0, 1 三个页面装入内存。当进程要访问页面 2 时，产生缺页中断，会将页面 7 换出，因为页面 7 再次被访问的时间最长。</li>
+</ul>
+<h3><a id="b%E6%9C%80%E8%BF%91%E6%9C%80%E4%B9%85%E6%9C%AA%E4%BD%BF%E7%94%A8-lru-least-recently-used" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 最近最久未使用LRU(Least Recently Used)</h3>
+<ul>
+<li>虽然无法知道将来要使用的页面情况，但是可以知道过去使用页面的情况。LRU 将最近最久未使用的页面换出。</li>
+<li>为了实现 LRU，需要在内存中维护一个所有页面的链表。当一个页面被访问时，将这个页面移到链表表头。这样就能保证链表表尾的页面是最近最久未访问的。</li>
+<li>因为每次访问都需要更新链表，因此这种方式实现的 LRU 代价很高。<br />
+<img src="media/16767769057697/16767918078843.png" alt="" /></li>
+</ul>
+<h3><a id="c%E6%9C%80%E8%BF%91%E6%9C%AA%E4%BD%BF%E7%94%A8-nru-not-recently-used" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 最近未使用NRU(Not Recently Used)</h3>
+<ul>
+<li>每个页面都有两个状态位：R 与 M，当页面被访问时设置页面的 R=1，当页面被修改时设置 M=1。其中 R 位会定时被清零。可以将页面分成以下四类:
+<ul>
+<li>R=0，M=0</li>
+<li>R=0，M=1</li>
+<li>R=1，M=0</li>
+<li>R=1，M=1</li>
+</ul>
+</li>
+<li>当发生缺页中断时，NRU 算法随机地从类编号最小的非空类中挑选一个页面将它换出。</li>
+<li>NRU 优先换出已经被修改的脏页面（R=0，M=1），而不是被频繁使用的干净页面（R=1，M=0）。</li>
+</ul>
+<h3><a id="d%E5%85%88%E8%BF%9B%E5%85%88%E5%87%BA-fifo" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>d 先进先出FIFO</h3>
+<ul>
+<li>选择换出的页面是最先进入的页面。</li>
+<li>该算法会将那些经常被访问的页面换出，导致缺页率升高。</li>
+</ul>
+<h3><a id="e%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%BA%E4%BC%9A%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>e 第二次机会算法</h3>
+<ul>
+<li>FIFO 算法可能会把经常使用的页面置换出去，为了避免这一问题，对该算法做一个简单的修改：</li>
+<li>当页面被访问 (读或写) 时设置该页面的 R 位为 1。需要替换的时候，检查最老页面的 R 位。如果 R 位是 0，那么这个页面既老又没有被使用，可以立刻置换掉；如果是 1，就将 R 位清 0，并把该页面放到链表的尾端，修改它的装入时间使它就像刚装入的一样，然后继续从链表的头部开始搜索。<br />
+<img src="media/16767769057697/16767924962404.png" alt="" /></li>
+</ul>
+<h3><a id="f%E6%97%B6%E9%92%9F-clock" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>f 时钟clock</h3>
+<ul>
+<li>第二次机会算法需要在链表中移动页面，降低了效率。时钟算法使用环形链表将页面连接起来，再使用一个指针指向最老的页面。<br />
+<img src="media/16767769057697/16767925903395.png" alt="" /></li>
+</ul>
+<h2><a id="4-4%E5%88%86%E6%AE%B5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.4 分段</h2>
+<ul>
+<li>
+<p>虚拟内存采用的是分页技术，也就是将地址空间划分成固定大小的页，每一页再与内存进行映射。</p>
+</li>
+<li>
+<p>下图为一个编译器在编译过程中建立的多个表，有 4 个表是动态增长的，如果使用分页系统的一维地址空间，动态增长的特点会导致覆盖问题的出现。<br />
+<img src="media/16767769057697/16767926560925.png" alt="" /></p>
+</li>
+<li>
+<p>分段的做法是把每个表分成段，一个段构成一个独立的地址空间。每个段的长度可以不同，并且可以动态增长。<br />
+<img src="media/16767769057697/16767927116894.png" alt="" /></p>
+</li>
+</ul>
+<h2><a id="4-5%E6%AE%B5%E9%A1%B5%E5%BC%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.5 段页式</h2>
+<ul>
+<li>程序的地址空间划分成多个拥有独立地址空间的段，每个段上的地址空间划分成大小相同的页。这样既拥有分段系统的共享和保护，又拥有分页系统的虚拟内存功能。</li>
+</ul>
+<h2><a id="4-6%E5%88%86%E9%A1%B5%E4%B8%8E%E5%88%86%E6%AE%B5%E7%9A%84%E6%AF%94%E8%BE%83" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.6 分页与分段的比较</h2>
+<blockquote>
+<p>类比堆与栈</p>
+</blockquote>
+<ul>
+<li>对程序员的透明性：分页透明，但是分段需要程序员显式划分每个段。</li>
+<li>地址空间的维度：分页是一维地址空间，分段是二维的。</li>
+<li>大小是否可以改变：页的大小不可变，段的大小可以动态改变。</li>
+<li>出现的原因：分页主要用于实现虚拟内存，从而获得更大的地址空间；分段主要是为了使程序和数据可以被划分为逻辑上独立的地址空间并且有助于共享和保护。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[5 设备管理]]></title>
+    <link href="https://lancerstadium.github.io/16767954173913.html"/>
+    <updated>2023-02-19T16:30:17+08:00</updated>
+    <id>https://lancerstadium.github.io/16767954173913.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#5%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86">5 设备管理</a>
+<ul>
+<li><a href="#5-1%E7%A3%81%E7%9B%98%E7%BB%93%E6%9E%84">5.1 磁盘结构</a></li>
+<li><a href="#5-2%E7%A3%81%E7%9B%98%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95">5.2 磁盘调度算法</a>
+<ul>
+<li><a href="#a%E5%85%88%E6%9D%A5%E5%85%88%E6%9C%8D%E5%8A%A1-fcfs-first-come-first-served">a 先来先服务FCFS(First Come First Served)</a></li>
+<li><a href="#b%E6%9C%80%E7%9F%AD%E5%AF%BB%E9%81%93%E6%97%B6%E9%97%B4%E4%BC%98%E5%85%88-sstf-shortest-seek-time-first">b 最短寻道时间优先SSTF(Shortest Seek Time First)</a></li>
+<li><a href="#c%E7%94%B5%E6%A2%AF%E7%AE%97%E6%B3%95-scan">c 电梯算法SCAN</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2><a id="5-1%E7%A3%81%E7%9B%98%E7%BB%93%E6%9E%84" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.1 磁盘结构</h2>
+<ul>
+<li>盘面（Platter）：一个磁盘有多个盘面；</li>
+<li>磁道（Track）：盘面上的圆形带状区域，一个盘面可以有多个磁道；</li>
+<li>扇区（Track Sector）：磁道上的一个弧段，一个磁道可以有多个扇区，它是最小的物理储存单位，目前主要有 512 bytes 与 4 K 两种大小；</li>
+<li>磁头（Head）：与盘面非常接近，能够将盘面上的磁场转换为电信号（读），或者将电信号转换为盘面的磁场（写）；</li>
+<li>制动手臂（Actuator arm）：用于在磁道之间移动磁头；</li>
+<li>主轴（Spindle）：使整个盘面转动。<br />
+<img src="media/16767954173913/16767963709564.jpg" alt="" /></li>
+</ul>
+<h2><a id="5-2%E7%A3%81%E7%9B%98%E8%B0%83%E5%BA%A6%E7%AE%97%E6%B3%95" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.2 磁盘调度算法</h2>
+<ul>
+<li>读写一个磁盘块的时间的影响因素有：
+<ul>
+<li>旋转时间（主轴转动盘面，使得磁头移动到适当的扇区上）</li>
+<li>寻道时间（制动手臂移动，使得磁头移动到适当的磁道上）</li>
+<li>实际的数据传输时间</li>
+</ul>
+</li>
+<li>其中，寻道时间最长，因此磁盘调度的主要目标是使磁盘的平均寻道时间最短。</li>
+</ul>
+<h3><a id="a%E5%85%88%E6%9D%A5%E5%85%88%E6%9C%8D%E5%8A%A1-fcfs-first-come-first-served" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>a 先来先服务FCFS(First Come First Served)</h3>
+<ul>
+<li>按照磁盘请求的顺序进行调度。</li>
+<li>优点是<strong>公平和简单</strong>。缺点也很明显，因为未对寻道做任何优化，使平均<strong>寻道时间可能较长</strong>。</li>
+</ul>
+<h3><a id="b%E6%9C%80%E7%9F%AD%E5%AF%BB%E9%81%93%E6%97%B6%E9%97%B4%E4%BC%98%E5%85%88-sstf-shortest-seek-time-first" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>b 最短寻道时间优先SSTF(Shortest Seek Time First)</h3>
+<ul>
+<li>优先调度与当前磁头所在磁道距离最近的磁道。</li>
+<li>虽然平均寻道时间比较低，但是<strong>不够公平</strong>。如果新到达的磁道请求总是比一个在等待的磁道请求近，那么在等待的磁道请求会一直等待下去，也就是出现<strong>饥饿现象</strong>。具体来说，两端的磁道请求更容易出现饥饿现象。<br />
+<img src="media/16767954173913/16767974234490.png" alt="" /></li>
+</ul>
+<h3><a id="c%E7%94%B5%E6%A2%AF%E7%AE%97%E6%B3%95-scan" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>c 电梯算法SCAN</h3>
+<ul>
+<li>电梯总是保持一个方向运行，直到该方向没有请求为止，然后改变运行方向。</li>
+<li>电梯算法（扫描算法）和电梯的运行过程类似，总是按一个方向来进行磁盘调度，直到该方向上没有未完成的磁盘请求，然后改变方向。</li>
+<li>因为考虑了移动方向，因此所有的磁盘请求都会被满足，解决了 SSTF 的饥饿问题。<br />
+<img src="media/16767954173913/16767974822334.png" alt="" /></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[6 链接]]></title>
+    <link href="https://lancerstadium.github.io/16767976105145.html"/>
+    <updated>2023-02-19T17:06:50+08:00</updated>
+    <id>https://lancerstadium.github.io/16767976105145.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#6%E9%93%BE%E6%8E%A5">6 链接</a>
+<ul>
+<li><a href="#6-1%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F">6.1 编译系统</a></li>
+<li><a href="#6-2%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5">6.2 静态链接</a></li>
+<li><a href="#6-3%E7%9B%AE%E6%A0%87%E6%96%87%E4%BB%B6">6.3 目标文件</a></li>
+<li><a href="#6-4%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5">6.4 动态链接</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2><a id="6-1%E7%BC%96%E8%AF%91%E7%B3%BB%E7%BB%9F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.1 编译系统</h2>
+<ul>
+<li>以下是一个 hello.c 程序：</li>
+</ul>
+<pre><code class="language-cpp">#include &lt;stdio.h&gt;
+
+int main()
+{
+    printf(&quot;hello, world\n&quot;);
+    return 0;
+}
+</code></pre>
+<ul>
+<li>在 Unix 系统上，由编译器把源文件转换为目标文件。</li>
+</ul>
+<pre><code class="language-shell">gcc -o hello hello.c
+</code></pre>
+<ul>
+<li>
+<p>这个过程大致如下：<br />
+<img src="media/16767976105145/16767979544510.jpg" alt="" /></p>
+</li>
+<li>
+<p>预处理阶段：处理以 # 开头的预处理命令；</p>
+</li>
+<li>
+<p>编译阶段：翻译成汇编文件；</p>
+</li>
+<li>
+<p>汇编阶段：将汇编文件翻译成可重定位目标文件；</p>
+</li>
+<li>
+<p>链接阶段：将可重定位目标文件和 printf.o 等单独预编译好的目标文件进行合并，得到最终的可执行目标文件。</p>
+</li>
+</ul>
+<h2><a id="6-2%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.2 静态链接</h2>
+<ul>
+<li>静态链接器以一组可重定位目标文件为输入，生成一个完全链接的可执行目标文件作为输出。链接器主要完成以下两个任务：</li>
+<li>符号解析：每个符号对应于一个函数、一个全局变量或一个静态变量，符号解析的目的是将每个符号引用与一个符号定义关联起来。</li>
+<li>重定位：链接器通过把每个符号定义与一个内存位置关联起来，然后修改所有对这些符号的引用，使得它们指向这个内存位置。<br />
+<img src="media/16767976105145/16767980474683.jpg" alt="" /></li>
+</ul>
+<h2><a id="6-3%E7%9B%AE%E6%A0%87%E6%96%87%E4%BB%B6" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.3 目标文件</h2>
+<ul>
+<li>可执行目标文件：可以直接在内存中执行；</li>
+<li>可重定位目标文件：可与其它可重定位目标文件在链接阶段合并，创建一个可执行目标文件；</li>
+<li>共享目标文件：这是一种特殊的可重定位目标文件，可以在运行时被动态加载进内存并链接；</li>
+</ul>
+<h2><a id="6-4%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6.4 动态链接</h2>
+<ul>
+<li>静态库有以下两个问题：
+<ul>
+<li>当静态库更新时那么整个程序都要重新进行链接；</li>
+<li>对于 printf 这种标准函数库，如果每个程序都要有代码，这会极大浪费资源。</li>
+</ul>
+</li>
+<li>共享库是为了解决静态库的这两个问题而设计的，在 Linux 系统中通常用 .so 后缀来表示，Windows 系统上它们被称为 DLL。它具有以下特点：
+<ul>
+<li>在给定的文件系统中一个库只有一个文件，所有引用该库的可执行目标文件都共享这个文件，它不会被复制到引用它的可执行文件中；</li>
+<li>在内存中，一个共享库的 .text 节（已编译程序的机器代码）的一个副本可以被不同的正在运行的进程共享。<br />
+<img src="media/16767976105145/16767984944711.jpg" alt="" /></li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[二叉树]]></title>
+    <link href="https://lancerstadium.github.io/16768960464783.html"/>
+    <updated>2023-02-20T20:27:26+08:00</updated>
+    <id>https://lancerstadium.github.io/16768960464783.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="8%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E7%BB%93%E7%82%B9" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>8 二叉树的下一个结点</h2>
+<ul>
+<li>给定一个二叉树和其中的一个结点，请找出中序遍历顺序的下一个结点并且返回 。注意，树中的结点不仅包含左右子结点，同时包含指向父结点的指针。</li>
+</ul>
+<pre><code class="language-cpp">public class TreeLinkNode {
+
+    int val;
+    TreeLinkNode left = null;
+    TreeLinkNode right = null;
+    TreeLinkNode parent = null; // 指向父结点的指针
+
+    TreeLinkNode(int val) {
+        this.val = val;
+    }
+}
+</code></pre>
+<ul>
+<li>算法思路：我们先来回顾一下中序遍历的过程：先遍历树的左子树，再遍历根节点，最后再遍历右子树。所以最左节点是中序遍历的第一个节点。</li>
+</ul>
+<pre><code class="language-cpp">void traverse(TreeNode root) {
+    if (root == null) return;
+    traverse(root.left);
+    visit(root);
+    traverse(root.right);
+}
+</code></pre>
+<p><img src="media/16768960464783/16768965400980.gif" alt="" /></p>
+<ul>
+<li>
+<p>如果一个节点的右子树不为空，那么该节点的下一个节点是右子树的最左节点；<br />
+<img src="media/16768960464783/16768965724126.gif" alt="" /></p>
+</li>
+<li>
+<p>否则，向上找第一个左链接指向的树包含该节点的祖先节点。<br />
+<img src="media/16768960464783/16768966526428.gif" alt="" /></p>
+</li>
+</ul>
+<pre><code class="language-cpp">public TreeLinkNode GetNext(TreeLinkNode pNode) {
+    if(pNode.right != null){
+        TreeLinkNode node = pNode.right;
+        while(node.left != null)
+            node = node.left;
+        return node;
+    }else{
+        while(pNode.parent != null){
+            TreeLinkNode Parent = pNode.parent;
+            if(Parent.left == pNode)
+                return Parent;
+            pNode = pNode.parent;
+        }
+    }
+    return null;
+}
+</code></pre>
+<h2><a id="55-2" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>55.2</h2>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数据结构与算法]]></title>
+    <link href="https://lancerstadium.github.io/16760072467967.html"/>
+    <updated>2023-02-10T13:34:06+08:00</updated>
+    <id>https://lancerstadium.github.io/16760072467967.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="16766498867582.html">基本算法</a></li>
+<li><a href="16766501617463.html">Leetcode题解</a></li>
+</ul>
+<blockquote>
+<p>参考书籍：《大话数据结构》</p>
+</blockquote>
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[基本算法]]></title>
+    <link href="https://lancerstadium.github.io/16766498867582.html"/>
+    <updated>2023-02-18T00:04:46+08:00</updated>
+    <id>https://lancerstadium.github.io/16766498867582.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="%E5%89%8D%E8%A8%80" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>前言</h2>
+<ul>
+<li>本文简单列举了一些排序、查找、链表、树、图的基本算法。</li>
+</ul>
+<h2><a id="%E5%85%A5%E9%97%A8%E7%BA%A7" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>入门级</h2>
+<ul>
+<li><a href="16766499034746.html">1 排序算法</a></li>
+</ul>
+<hr />
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[1 排序算法]]></title>
+    <link href="https://lancerstadium.github.io/16766499034746.html"/>
+    <updated>2023-02-18T00:05:03+08:00</updated>
+    <id>https://lancerstadium.github.io/16766499034746.html</id>
+    <content type="html"><![CDATA[
+<ul>
+<li><a href="#1%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95">1 排序算法</a>
+<ul>
+<li><a href="#1-1%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F">1.1 选择排序</a></li>
+<li><a href="#1-2%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F">1.2 插入排序</a></li>
+<li><a href="#1-3%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F">1.3 希尔排序</a></li>
+<li><a href="#1-4%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F">1.4 冒泡排序</a></li>
+<li><a href="#1-5%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F">1.5 快速排序</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<ul>
+<li>排序算法比较：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>排序算法</th>
+<th style="text-align: left">平均时间复杂度</th>
+<th style="text-align: left">最好情况</th>
+<th>最坏情况</th>
+<th style="text-align: left">空间复杂度</th>
+<th>排序方式</th>
+<th style="text-align: left">稳定性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>冒泡排序</td>
+<td style="text-align: left">O(n^2)</td>
+<td style="text-align: left">O(n)</td>
+<td>O(n^2)</td>
+<td style="text-align: left">O(1)</td>
+<td>内部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+<tr>
+<td>选择排序</td>
+<td style="text-align: left">O(n^2)</td>
+<td style="text-align: left">O(n^2)</td>
+<td>O(n^2)</td>
+<td style="text-align: left">O(1)</td>
+<td>内部排序</td>
+<td style="text-align: left">不稳定</td>
+</tr>
+<tr>
+<td>插入排序</td>
+<td style="text-align: left">O(n^2)</td>
+<td style="text-align: left">O(n)</td>
+<td>O(n^2)</td>
+<td style="text-align: left">O(1)</td>
+<td>内部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+<tr>
+<td>希尔排序</td>
+<td style="text-align: left">O(nlogn)</td>
+<td style="text-align: left">O(nlog^2n)</td>
+<td>O(nlog^2n)</td>
+<td style="text-align: left">O(1)</td>
+<td>内部排序</td>
+<td style="text-align: left">不稳定</td>
+</tr>
+<tr>
+<td>归并排序</td>
+<td style="text-align: left">O(nlogn)</td>
+<td style="text-align: left">O(nlogn)</td>
+<td>O(nlogn)</td>
+<td style="text-align: left">O(n)</td>
+<td>外部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+<tr>
+<td>快速排序</td>
+<td style="text-align: left">O(nlogn)</td>
+<td style="text-align: left">O(nlogn)</td>
+<td>O(n^2)</td>
+<td style="text-align: left">O(logn)</td>
+<td>内部排序</td>
+<td style="text-align: left">不稳定</td>
+</tr>
+<tr>
+<td>堆排序</td>
+<td style="text-align: left">O(nlogn)</td>
+<td style="text-align: left">O(nlogn)</td>
+<td>O(nlogn)</td>
+<td style="text-align: left">O(1)</td>
+<td>内部排序</td>
+<td style="text-align: left">不稳定</td>
+</tr>
+<tr>
+<td>计数排序</td>
+<td style="text-align: left">O(n+k)</td>
+<td style="text-align: left">O(n+k)</td>
+<td>O(n+k)</td>
+<td style="text-align: left">O(k)</td>
+<td>外部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+<tr>
+<td>桶排序</td>
+<td style="text-align: left">O(n+k)</td>
+<td style="text-align: left">O(n+k)</td>
+<td>O(n^2)</td>
+<td style="text-align: left">O(n+k)</td>
+<td>外部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+<tr>
+<td>基数排序</td>
+<td style="text-align: left">O(n+k)</td>
+<td style="text-align: left">O(nxk)</td>
+<td>O(nxk)</td>
+<td style="text-align: left">O(n+k)</td>
+<td>外部排序</td>
+<td style="text-align: left">稳定</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="1-1%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1 选择排序</h3>
+<ul>
+<li>选择排序一种简单直观的排序算法，无论什么数据进去都是 O(\(n^2\)) 的时间复杂度。所以用到它的时候，数据规模越小越好。唯一的好处可能就是不占用额外的内存空间了吧。</li>
+<li>算法步骤：
+<ul>
+<li>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置</li>
+<li>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。</li>
+<li>重复第二步，直到所有元素均排序完毕。</li>
+</ul>
+</li>
+<li>演示：<br />
+<img src="media/16760072467967/16760127512948.gif" alt="" /></li>
+</ul>
+<pre><code class="language-cpp">void selection_sort(int n)
+{
+    for (int i = 0; i &lt; n - 1; i++)
+    {
+        int min = i;
+        for (int j = i + 1; j &lt; n; j++)
+        {
+            if (x[j] &lt; min)
+            {
+                min = j;
+            }
+        }
+        if (min != i)
+        {
+            swap(x,i,min);
+        }
+    }
+}
+</code></pre>
+<h3><a id="1-2%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2 插入排序</h3>
+<ul>
+<li>插入排序的代码实现虽然没有冒泡排序和选择排序那么简单粗暴，但它的原理应该是最容易理解的了，因为只要打过扑克牌的人都应该能够秒懂。插入排序是一种最简单直观的排序算法，它的工作原理是通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。 插入排序和冒泡排序一样，也有一种优化算法，叫做拆半插入。</li>
+<li>算法步骤：
+<ul>
+<li>将第一待排序序列第一个元素看做一个有序序列，把第二个元素到最后一个元素当成是未排序序列。</li>
+<li>从头到尾依次扫描未排序序列，将扫描到的每个元素插入有序序列的适当位置。（如果待插入的元素与有序序列中的某个元素相等，则将待插入元素插入到相等元素的后面。）</li>
+</ul>
+</li>
+<li>演示：<br />
+<img src="media/16760072467967/16760944896268.gif" alt="" /></li>
+</ul>
+<pre><code class="language-cpp">void insertion_sort(int n)
+{
+    for (int i = 1; i &lt; n; i++)
+    {
+        int t = x[i];
+        int j;
+        for (j = i; j &gt; 0 &amp;&amp; x[j-1] &gt; t ; j--)
+        {
+            x[j] = x[j-1];
+        }
+        x[j] = t;
+    }
+}
+</code></pre>
+<h3><a id="1-3%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.3 希尔排序</h3>
+<ul>
+<li>希尔排序，也称递减增量排序算法，是插入排序的一种更高效的改进版本。但希尔排序是非稳定排序算法。 希尔排序是基于插入排序的以下两点性质而提出改进方法的：
+<ul>
+<li>插入排序在对几乎已经排好序的数据操作时，效率高，即可以达到线性排序的效率；</li>
+<li>但插入排序一般来说是低效的，因为插入排序每次只能将数据移动一位； 希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-cpp">void shell_sort(int n)
+{
+    for (int inc = n/3; inc &gt;= 1; inc /= 3)
+    {
+        for (int i = inc; i &lt; n; i++)
+        {
+            int t = x[i];
+            int j;
+            for (j = i; j&gt;= inc &amp;&amp; x[j-inc] &gt; t; j-= inc)
+            {
+                x[j] = x[j - inc];
+            }
+            x[j] = t;
+        }
+    }
+}
+</code></pre>
+<h3><a id="1-4%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.4 冒泡排序</h3>
+<ul>
+<li>
+<p>算法步骤：</p>
+<ul>
+<li>比较相邻的元素。如果第一个比第二个大，就交换他们两个。</li>
+<li>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。</li>
+<li>针对所有的元素重复以上的步骤，除了最后一个。</li>
+<li>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</li>
+</ul>
+</li>
+<li>
+<p>动图演示：<br />
+<img src="media/16760072467967/16760954788302.gif" alt="" /></p>
+</li>
+</ul>
+<pre><code class="language-cpp">void bubble_sort(int n)
+{
+    bool change = true;
+    for (int i = n-1; i &gt;= 1 &amp;&amp; change; i--)
+    {
+        change = false;
+        for (int j = 0; j &lt; i; j++)
+        {
+            if(x[j] &gt; x[j + 1])
+            {
+                swap(x, j, j + 1);
+                change = true;
+            }
+        }
+    }
+}
+</code></pre>
+<h3><a id="1-5%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.5 快速排序</h3>
+<ul>
+<li>快速排序是由东尼·霍尔所发展的一种排序算法。在平均状况下，排序 n 个项目要 Ο(nlogn) 次比较。在最坏状况下则需要 Ο(n2) 次比较，但这种状况并不常见。事实上，快速排序通常明显比其他 Ο(nlogn) 算法更快，因为它的内部循环（inner loop）可以在大部分的架构上很有效率地被实现出来。 快速排序使用分治法（Divide and conquer）策略来把一个串行（list）分为两个子串行（sub-lists）</li>
+</ul>
+<blockquote>
+<p>快速排序的最坏运行情况是 O(n²)，比如说顺序数列的快排。但它的平摊期望时间是 O(nlogn)，且 O(nlogn) 记号中隐含的常数因子很小，比复杂度稳定等于 O(nlogn) 的归并排序要小很多。所以，对绝大多数顺序性较弱的随机数列而言，快速排序总是优于归并排序。</p>
+</blockquote>
+<ul>
+<li>
+<p>算法步骤：</p>
+<ul>
+<li>从数列中挑出一个元素，称为 “基准”（pivot）;</li>
+<li>重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；</li>
+<li>递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序； 递归的最底部情形，是数列的大小是零或一，也就是永远都已经被排序好了。虽然一直递归下去，但是这个算法总会退出，因为在每次的迭代（iteration）中，它至少会把一个元素摆到它最后的位置去。</li>
+</ul>
+</li>
+<li>
+<p>演示：<br />
+<img src="media/16760072467967/16760967533210.gif" alt="" /></p>
+</li>
+</ul>
+<pre><code class="language-cpp">void quick_sort(int l, int u)
+{
+    if(l &gt;= u)
+        return;
+    int m = l;
+    for(int i = l+1; i&lt;= u; i++)
+    {
+        if(x[i] &lt; x[l])
+            swap(x, ++m, i);
+    }
+    swap(x, l, m);
+    quick_sort(l, m-1);
+    quick_sort(m+1, u);
+}
+</code></pre>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Leetcode题解]]></title>
+    <link href="https://lancerstadium.github.io/16766501617463.html"/>
+    <updated>2023-02-18T00:09:21+08:00</updated>
+    <id>https://lancerstadium.github.io/16766501617463.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="%E5%89%8D%E8%A8%80" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>前言</h2>
+<ul>
+<li>本文从 Leetcode 中精选大概 200 左右的题目，去除了某些繁杂但是没有多少算法思想的题目，同时保留了面试中经常被问到的经典题目。</li>
+</ul>
+<h2><a id="%E7%AE%97%E6%B3%95%E6%80%9D%E6%83%B3" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>算法思想</h2>
+<h2><a id="%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9B%B8%E5%85%B3" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>数据结构相关</h2>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[剑指Offer题解]]></title>
+    <link href="https://lancerstadium.github.io/16767330748621.html"/>
+    <updated>2023-02-18T23:11:14+08:00</updated>
+    <id>https://lancerstadium.github.io/16767330748621.html</id>
+    <content type="html"><![CDATA[
+<h2><a id="%E5%89%8D%E8%A8%80" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>前言</h2>
+<blockquote>
+<p>题目来自《何海涛. 剑指 Offer[M]. 电子工业出版社, 2012.》</p>
+</blockquote>
+<ul>
+<li><a href="16768888758128.html">数组与矩阵</a></li>
+<li><a href="16768922474530.html">栈、队列、堆</a></li>
+<li><a href="16768938611569.html">双指针</a></li>
+<li></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[数组与矩阵]]></title>
+    <link href="https://lancerstadium.github.io/16768888758128.html"/>
+    <updated>2023-02-20T18:27:55+08:00</updated>
+    <id>https://lancerstadium.github.io/16768888758128.html</id>
+    <content type="html"><![CDATA[
+<hr />
+<h2><a id="3%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 数组中重复的数字</h2>
+<ul>
+<li>题目描述：在一个长度为 n 的数组里的所有数字都在 0 到 n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字是重复的，也不知道每个数字重复几次。请找出数组中任意一个重复的数字。</li>
+<li>要求：时间O(N)，空间O(1)</li>
+</ul>
+<pre><code class="language-cpp">Input:
+{2, 3, 1, 0, 2, 5}
+
+Output:
+2
+</code></pre>
+<ul>
+<li>算法思路：对于这种数组元素在 [0, n-1] 范围内的问题，可以将值为 i 的元素调整到第 i 个位置上进行求解。在调整过程中，如果第 i 位置上已经有一个值为 i 的元素，就可以知道 i 值重复。</li>
+<li>以 (2, 3, 1, 0, 2, 5) 为例，遍历到位置 4 时，该位置上的数为 2，但是第 2 个位置上已经有一个 2 的值了，因此可以知道 2 重复：<img src="media/16768888758128/16768892308475.gif" alt="" /></li>
+</ul>
+<pre><code class="language-cpp">public int duplicate(int[] nums){
+    for(int i = 0; i &lt; nums.length; i++){
+        while(nums[i] != i){
+            if(nums[i] == nums[nums[i]]){
+                return nums[i];
+            }
+            swap(nums, i, nums[i]);
+        }
+    }
+    return -1;
+}
+
+
+private void swap(int[] nums, int i, int j)
+{
+    int t = nums[i];
+    nums[i] = nums [j];
+    nums[j] = t;
+}
+</code></pre>
+<h2><a id="4%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E6%9F%A5%E6%89%BE" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4 二维数组中的查找</h2>
+<ul>
+<li>题目描述：给定一个二维数组，其每一行从左到右递增排序，从上到下也是递增排序。给定一个数，判断这个数是否在该二维数组中。</li>
+<li>要求：时间复杂度O(M+N)，空间复杂度O(1)，M行N列</li>
+</ul>
+<pre><code class="language-plain_text">Consider the following matrix:
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+
+Given target = 5, return true.
+Given target = 20, return false.
+</code></pre>
+<ul>
+<li>算法思路：该二维数组中的一个数，小于它的数一定在其左边，大于它的数一定在其下边。因此，从右上角开始查找，就可以根据 target 和当前元素的大小关系来快速地缩小查找区间，每次减少一行或者一列的元素。当前元素的查找区间为左下角的所有元素。<br />
+<img src="media/16768888758128/16768904748831.gif" alt="" /></li>
+</ul>
+<pre><code class="language-cpp">public boolean Find(int target, int[][] matrix){
+    if(matrix == null || matrix.length == 0 || matrix[0].length ==0)
+        return false;
+    int rows = matrix.length, cols = matrix[0].length;
+    int r = 0, c = cols - 1; // 右上角开始
+    while(r &lt;= rows - 1 &amp;&amp; c &gt;= 0){
+        if(target == matrix[r][c])
+            return true;
+        else if(target &gt; matrix[r][c])
+            r++;
+        else
+            c--;
+    }
+    return false;
+}
+</code></pre>
+<h2><a id="5%E6%9B%BF%E6%8D%A2%E7%A9%BA%E6%A0%BC" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5 替换空格</h2>
+<ul>
+<li>题目描述：将一个字符串中的空格替换成 &quot;%20&quot;。</li>
+</ul>
+<pre><code class="language-plain_text">Input:
+&quot;A B&quot;
+
+Output:
+&quot;A%20B&quot;
+</code></pre>
+<ul>
+<li>解题思路： 在字符串尾部填充任意字符，使得字符串的长度等于替换之后的长度。因为一个空格要替换成三个字符（%20），所以当遍历到一个空格时，需要在尾部填充两个任意字符。</li>
+<li>令 P1 指向字符串原来的末尾位置，P2 指向字符串现在的末尾位置。P1 和 P2 从后向前遍历，当 P1 遍历到一个空格时，就需要令 P2 指向的位置依次填充 02%（注意是逆序的），否则就填充上 P1 指向字符的值。从后向前遍是为了在改变 P2 所指向的内容时，不会影响到 P1 遍历原来字符串的内容。</li>
+<li>当 P2 遇到 P1 时（P2 &lt;= P1），或者遍历结束（P1 &lt; 0），退出。<br />
+<img src="media/16768888758128/16768915798222.gif" alt="" /></li>
+</ul>
+<pre><code class="language-cpp">public String replaceSpace(StringBuffer str){
+    int P1 = str.length() - 1;
+    for(int i = 0; i &lt;= P1; i++)
+        if(str.charAt(i) == ' ')
+            str.append(&quot;  &quot;);
+    int P2 = str.length() - 1;
+    while(P1 &gt;= 0 &amp;&amp; P2 &gt; P1){
+        char c = str.charAt(P1--);
+        if(c == ' '){
+            str.setCharAt(P2--, '0');
+            str.setCharAt(P2--, '2');
+            str.setCharAt(P2--, '%');
+        }else{
+            str.setCharAt(P2)
+        }
+    }
+    return str.toString();
+}
+</code></pre>
+
+]]></content>
+  </entry>
+  
+</feed>

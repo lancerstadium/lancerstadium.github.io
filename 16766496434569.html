@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+
+
+    <title>
+      
+    1 基础 - LancerStadium
+    
+    </title>
+
+
+  <link href="asset/css/style.css" rel="stylesheet" > 
+  <link href="asset/js/xcode.min.css" rel="stylesheet">
+  <script src="asset/js/headroom.js"></script>
+
+  <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/css/font-awesome.css">
+ -->
+
+  <!-- <script src="asset/highlightjs/highlight.pack.js"></script> -->
+  <!-- <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+
+
+  </head>
+
+  <!-- 主体开始 -->
+  <!-- <body class="" gtools_scp_screen_capture_injected="true"> -->
+  <!-- 上面为主页白底色版本 -->
+    
+<body class="bg-grey" gtools_scp_screen_capture_injected="true" data-feedly-mini="yes">
+<!-- 上面是主页灰底色版本 -->
+
+<!--[if lt IE 8]>
+<div class="browsehappy" role="dialog">
+    当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>。
+</div>
+<![endif]-->
+<!-- 头部位置 -->
+
+<header id="header" class="header bg-white headroom">
+  <div class="navbar-container"> 
+    <a href="index.html" class="navbar-logo"><img src="asset/img/K-logo.png"> </a>
+    <div class="navbar-menu"> 
+
+        
+        <a href="index.html">Home</a>
+        
+        <a href="archives.html">Archives</a>
+        
+        
+    </div> 
+    <!-- 搜索框体 -->
+    <!--  <div class="navbar-search" onclick="">
+        <span class="icon-search"></span>
+        <form id="search" method="post" action="/" role="search">
+          <span class="search-box">
+            <input type="text" id="input" class="input" name="s" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
+          </span>
+        </form>
+    </div> -->
+
+    <div class="navbar-mobile-menu" onclick=""> 
+      <span class="icon-menu cross"><span class="middle"></span></span> 
+        <ul> 
+          
+          <li>
+          <a href="index.html">Home</a>
+          </li>
+          
+          <li>
+          <a href="archives.html">Archives</a>
+          </li>
+          
+        </ul> 
+    </div> 
+  </div> 
+</header>
+<!-- 头部结束 --> <!-- post 开始 -->
+<div class="bg-white" gtools_scp_screen_capture_injected="true" data-feedly-mini="yes">
+	<article class="main-content page-page" style="max-width: 700px;padding: 110px 25px 20px" itemscope="" itemtype="http://schema.org/Article">
+		<div class="post-header">
+			<!-- title -->
+			<div class="post-header">
+				<h1 class="post-title itemprop="name headline">1 基础</h1>	
+				<div class="post-data">
+					<time datetime="2023-02-18T00:00:43+08:00" pubdate data-updated="true">2023/02/18</time>
+				</div>
+			</div>
+		</div>
+	<div id="post-content" class="post-content" itemprop="articleBody"> 
+		<p class="post-tags"> 
+		
+		<a href='cpppoint.html'>C++知识点</a>&nbsp;
+		
+		</p>
+	<!-- 正文 -->
+		<p>
+		<ul>
+<li><a href="#1%E5%9F%BA%E7%A1%80">1 基础</a>
+<ul>
+<li><a href="#1%E7%AE%80%E8%BF%B0-cc%E5%8C%BA%E5%88%AB">1. 简述C/C++区别</a></li>
+<li><a href="#2-gcc%E7%BC%96%E8%AF%91%E6%BA%90%E4%BB%A3%E7%A0%81%E5%88%B0hello-c%E7%9A%84%E8%BF%87%E7%A8%8B">2. gcc编译源代码到hello.c的过程</a></li>
+<li><a href="#3-cc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86">3. C/C++内存管理</a></li>
+<li><a href="#4%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB">4. 堆和栈的区别</a></li>
+<li><a href="#5%E4%BB%80%E4%B9%88%E5%8F%AB%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F">5. 什么叫内存泄漏</a></li>
+<li><a href="#6%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B">6. 函数调用过程</a></li>
+<li><a href="#7%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8">7. 指针与引用</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="1%E7%AE%80%E8%BF%B0-cc%E5%8C%BA%E5%88%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. 简述C/C++区别</h3>
+<ul>
+<li>
+<p>思想上：</p>
+<ul>
+<li>
+<p>C：面向过程、函数式，将问题分成不同步骤并调用函数依次实现</p>
+</li>
+<li>
+<p>C++：面向对象、类和对象，将数据和数据操作封装成不同的类，通过创建这些类的对象并调用成员函数来实现对数据模型的操作</p>
+</li>
+</ul>
+</li>
+<li>
+<p>应用上：</p>
+<ul>
+<li>C更偏低层，常常用于嵌入式开发、驱动开发或与硬件交互的领域</li>
+<li>C++由于优秀的面向对象机制，在大型应用程序开发方面表现出色</li>
+</ul>
+</li>
+<li>
+<p>C++是C的扩充。C++添加的机制有：对象、类模版、异常处理、运算符重载、标准模版库、命名空间、流</p>
+</li>
+</ul>
+<h3><a id="2-gcc%E7%BC%96%E8%AF%91%E6%BA%90%E4%BB%A3%E7%A0%81%E5%88%B0hello-c%E7%9A%84%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. gcc编译源代码到hello.c的过程</h3>
+<ul>
+<li>
+<p>过程：hello.c -&gt; hello.i -&gt; hello.s -&gt; hello.o -&gt; hello</p>
+</li>
+<li>
+<p>步骤：</p>
+<ol>
+<li>
+<p>预处理：hello.c -&gt; hello.i<br />
+<code>gcc -E hello.c -o hello.i</code></p>
+<p>a. 宏定义 #define</p>
+<p>b. 条件编译指令 #ifdef</p>
+<p>c. 处理文件包含指令 #include</p>
+<p>d. 删除注释</p>
+<p>e. 添加行号和文件标识（方便报错）</p>
+</li>
+<li>
+<p>编译：hello.i -&gt; hello.s （汇编文件）<br />
+<code>gcc -S hello.i -o hello.s</code></p>
+<p>a. 词法分析（<em>Lexical analysis</em>）：从左到右读入源程序，按词法规则将源代码分割成一个个单词（Token），输出二元组&lt;单词类别，单词属性&gt;。</p>
+<p>b. 语法分析（<em>Syntax analysis</em>）：识别由词法分析器输出的单词符号序列，构造一棵语法树。语法树指出了词法单元流的语法结构，可以判断是否符合语法规范。</p>
+<p>c. 语义分析（<em>Semantic analysis</em>）：使用语法树和单词符号表中的信息，进一步检查源程序是否满足语言定义的语义约束。</p>
+<p>d. 中间代码生成优化：根据语义分析的输出，生成类机器语言的中间代码，如三地址代码。改进中间代码的质量。</p>
+<p>e. 目标代码生成：将中间代码映射成目标语言(汇编语言)。</p>
+</li>
+<li>
+<p>汇编：hello.s -&gt; hello.o （二进制文件）<br />
+<code>gcc -c hello.s -o hello.o</code></p>
+<p>a. 汇编器将汇编代码翻译成可执行的机器码。每一条汇编语句对应一条机器指令，因此汇编器的工作就是根据汇编指令和机器指令的对照表一一翻译过来即可。</p>
+</li>
+<li>
+<p>链接：hello.o -&gt; hello （可执行文件）<br />
+<code>gcc hello.c -o hello</code></p>
+<p>链接器将多个汇编后得到的机器码文件链接，从而生成一个可执行程序。分为静态链接和动态链接两种方式。</p>
+<p>a. 静态链接：在链接可执行文件时，链接器会找到所有被用到的源代码，将它们复制并组合起来形成一个可执行文件。优点是由于可执行文件中已经具备了执行程序需要的全部内容，因此执行时运行速度较快。缺点是如果有多个可执行程序需要引用同一个目标文件，每个可执行程序都会复制一份该文件的副本，造成空间浪费；另外，如果某个目标文件被修改了，则所有引用该文件的可执行程序都需要重新编译。</p>
+<p>c. 动态链接：程序被拆分成独立的部分存储，只有运行时才链接在一起形成完整的程序。优点是即使多个程序依赖同一个动态链接库，也不需要将这个库复制多份，而是所有程序共享这个库；此外在程序更新时只更新被修改的库，不需要重新链接所有程序。缺点是因为将链接过程推迟到程序运行时期，所以会对程序性能产生损失。</p>
+</li>
+</ol>
+</li>
+</ul>
+<h3><a id="3-cc%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. C/C++内存管理</h3>
+<ul>
+<li>内存划分：
+<ul>
+<li>栈区：运行时函数分配局部变量、函数参数、返回数据、返回地址</li>
+<li>堆区：程序员自动分配</li>
+<li>全局区（静态区）：全局变量、静态数据，系统释放</li>
+<li>常量区（文字）：存放常量值，系统释放</li>
+<li>代码区：存放函数体（类成员函数和全局区）的二进制代码</li>
+</ul>
+</li>
+<li>3种管理数据内存方式：自动存储、静态存储、动态存储
+<ul>
+<li>自动存储：函数内部定义常规变量使用自动存储空间，被调用自动产生和消亡（栈）</li>
+<li>静态存储：整个程序执行期间都存在的存储方式（static）</li>
+<li>动态存储：new/delete，不连续</li>
+</ul>
+</li>
+</ul>
+<h3><a id="4%E5%A0%86%E5%92%8C%E6%A0%88%E7%9A%84%E5%8C%BA%E5%88%AB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>4. 堆和栈的区别</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center">堆</th>
+<th style="text-align: center">栈</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center">用户自己申请</td>
+<td style="text-align: center">系统分配</td>
+</tr>
+<tr>
+<td style="text-align: center">由不连续的内存块组成的链表，大小可以调整</td>
+<td style="text-align: center">连续空间，大小固定</td>
+</tr>
+<tr>
+<td style="text-align: center">速度慢，会产生碎片</td>
+<td style="text-align: center">速度快，不产生碎片</td>
+</tr>
+<tr>
+<td style="text-align: center">向高地址增长</td>
+<td style="text-align: center">向低地址增长</td>
+</tr>
+<tr>
+<td style="text-align: center">由库函数（malloc/realloc/free, new/delete）提供</td>
+<td style="text-align: center">由系统提供</td>
+</tr>
+</tbody>
+</table>
+<h3><a id="5%E4%BB%80%E4%B9%88%E5%8F%AB%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>5. 什么叫内存泄漏</h3>
+<ul>
+<li>通常指堆泄漏，程序员向系统申请任意大小堆内存块，使用完毕必须显式内存释放，否则该内存不能再次被使用。（malloc/realloc -&gt; free, new -&gt; delete）</li>
+<li>用动态存储分配函数动态开辟的空间，在使用完毕后未释放，结果导致一直占据该内存单元即为内存泄露。</li>
+<li>措施：
+<ol>
+<li>使用的时候要记得指针的长度</li>
+<li>malloc的时候得确定在那里free</li>
+<li>对指针赋值的时候应该注意被赋值指针需要不需要释放</li>
+<li>动态分配内存的指针最好不要再次赋值</li>
+<li>在C++中应该优先考虑使用智能指针</li>
+</ol>
+</li>
+</ul>
+<h3><a id="6%E5%87%BD%E6%95%B0%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>6. 函数调用过程</h3>
+<pre><code class="language-cpp">int main(void)
+{
+  ...
+  d = fun(a, b, c);
+  cout&lt;&lt;d&lt;&lt;endl;
+  ...
+  return 0;
+}
+</code></pre>
+<pre><code class="language-txt">1. main()：
+
+   a. 参数拷贝（push）：c-&gt;b-&gt;a
+
+   b. 保存 d = fun(a, d, c) 下一条指令：cout&lt;&lt;
+
+   c. 跳转到fun()
+
+   2. fun()：
+
+      a. 移动ebp, esp形成新的栈帧结构
+
+      b. 形成临时变量并执行相关操作（push）
+
+      c. return一个值
+
+      d. 出栈（pop）
+
+      e. 恢复main函数栈帧结构
+
+      f. 返回main()
+
+3. main()...
+</code></pre>
+<h3><a id="7%E6%8C%87%E9%92%88%E4%B8%8E%E5%BC%95%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>7. 指针与引用</h3>
+
+		</p>
+		<!-- 侧边导航条 -->
+		<div id="directory-content" class="directory-content">
+    		<div id="directory" style="margin-left: 50px;margin-top: 120px"></div>
+		</div>
+	<!-- JS -->
+	<script>
+		var postDirectoryBuild = function() {
+		    var postChildren = function children(childNodes, reg) {
+		        var result = [],
+		            isReg = typeof reg === 'object',
+		            isStr = typeof reg === 'string',
+		            node, i, len;
+		        for (i = 0, len = childNodes.length; i < len; i++) {
+		            node = childNodes[i];
+		            if ((node.nodeType === 1 || node.nodeType === 9) &&
+		                (!reg ||
+		                isReg && reg.test(node.tagName.toLowerCase()) ||
+		                isStr && node.tagName.toLowerCase() === reg)) {
+		                result.push(node);
+		            }
+		        }
+		        return result;
+		    },
+		    createPostDirectory = function(article, directory, isDirNum) {
+		        var contentArr = [],
+		            titleId = [],
+		            levelArr, root, level,
+		            currentList, list, li, link, i, len;
+		        levelArr = (function(article, contentArr, titleId) {
+		            var titleElem = postChildren(article.childNodes, /^h\d$/),
+		                levelArr = [],
+		                lastNum = 1,
+		                lastRevNum = 1,
+		                count = 0,
+		                guid = 1,
+		                id = 'directory' + (Math.random() + '').replace(/\D/, ''),
+		                lastRevNum, num, elem;
+		            while (titleElem.length) {
+		                elem = titleElem.shift();
+		                contentArr.push(elem.innerHTML);
+		                num = +elem.tagName.match(/\d/)[0];
+		                if (num > lastNum) {
+		                    levelArr.push(1);
+		                    lastRevNum += 1;
+		                } else if (num === lastRevNum ||
+		                    num > lastRevNum && num <= lastNum) {
+		                    levelArr.push(0);
+		                    lastRevNum = lastRevNum;
+		                } else if (num < lastRevNum) {
+		                    levelArr.push(num - lastRevNum);
+		                    lastRevNum = num;
+		                }
+		                count += levelArr[levelArr.length - 1];
+		                lastNum = num;
+		                elem.id = elem.id || (id + guid++);
+		                titleId.push(elem.id);
+		            }
+		            if (count !== 0 && levelArr[0] === 1) levelArr[0] = 0;
+
+		            return levelArr;
+		        })(article, contentArr, titleId);
+		        currentList = root = document.createElement('ul');
+		        dirNum = [0];
+		        for (i = 0, len = levelArr.length; i < len; i++) {
+		            level = levelArr[i];
+		            if (level === 1) {
+		                list = document.createElement('ul');
+		                if (!currentList.lastElementChild) {
+		                    currentList.appendChild(document.createElement('li'));
+		                }
+		                currentList.lastElementChild.appendChild(list);
+		                currentList = list;
+		                dirNum.push(0);
+		            } else if (level < 0) {
+		                level *= 2;
+		                while (level++) {
+		                    if (level % 2) dirNum.pop();
+		                    currentList = currentList.parentNode;
+		                }
+		            }
+		            dirNum[dirNum.length - 1]++;
+		            li = document.createElement('li');
+		            link = document.createElement('a');
+		            link.href = '#' + titleId[i];
+		            link.innerHTML = !isDirNum ? contentArr[i] :
+		                dirNum.join('.') + ' ' + contentArr[i] ;
+		            li.appendChild(link);
+		            currentList.appendChild(li);
+		        }
+		        directory.appendChild(root);
+		    };
+		    createPostDirectory(document.getElementById('post-content'),document.getElementById('directory'), true);
+		};
+		postDirectoryBuild();
+	</script>	
+	<!-- 版权声明 -->
+		<p class="post-info" style="color: #BCBDB6">
+				本文由 <a style="color: #BCBDB6" href="#">LancerStadium
+				</a> 创作，采用 <a style="color: #BCBDB6" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为: 2023-02-18T00:00:43+08:00
+		</p>
+	<!-- 导航 -->
+			<div id="comments" class="clearfix" style="padding: 0px;">
+				<footer class="post-footer clearfix">	    			
+				    <div class="meta">
+					    
+					    <P style="float: left;">
+					    	<a href="16760001982195.html" 
+					        title="Previous Post: C/C++基础知识点">&laquo; C/C++基础知识点</a>
+					    </p>
+					    <p style="float:right; ">
+					    	
+					    	
+					        <a href="16766497470919.html" 
+					        title="Next Post: 2 C++特性">2 C++特性 &raquo;</a>
+					    </p> 
+					    
+				    </div>
+			  	</footer>
+	<!-- footer end -->
+			</div>		
+	</div>
+</article>
+			<!-- 评论区 -->
+			<div id="respond-post-269" class="comment-container"> 
+				<div id="comments" class="clearfix">
+
+				<script type="text/javascript" src="/pm/hashover/hashover.js"></script>
+<noscript>You must have JavaScript enabled to use the comments.</noscript>
+
+<!-- 评论区结束 -->
+					<div>
+					
+					</div>
+
+				</div>
+			</div>
+</div>
+<!-- headroom -->
+<script type="text/javascript"> 
+(function() {
+    var header = new Headroom(document.querySelector("#header"), {
+        tolerance: 3,
+        offset : 80,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
+}());
+</script>  <footer id="footer" class="footer" style="background-color: #030501;color: #FFFFFE;">
+  <div class="footer-meta">
+    <div class="footer-container">
+      <!-- 版权说明 -->
+      <div class="meta-item meta-copyright">
+        <div class="meta-copyright-info">
+          <h2 class="meta-title">INFO</h2>
+          <div class="info-text">  
+              <p>Copyright &copy; 2017 <br>
+              <span class="credit">Powered by 
+              <a target="_blank" href="http://zh.mweb.im/">MWeb</a> 
+              </span>
+              <p>Theme Design by <a href="https://www.linpx.com/" target="_blank">Chakhsu</a></p>
+              <p>Migrating to Mweb by <a href="http://metaidea.cn">idken</a></p>
+              </p> 
+          </div>                  
+        </div>
+      </div>  
+      <!-- Categories -->
+      <div class="meta-item meta-comments">
+          <h2 class="meta-title">CATEGORIES</h2>  
+             
+            
+            <li>
+            <a href="pre.html">0 序言&nbsp;(3)</a>
+            <p>
+            
+            </p>
+            </li>
+            
+             
+            
+            <li>
+            <a href="cppbase.html">1 C++基础&nbsp;(21)</a>
+            <p>
+            
+            <a href="cpppoint.html">C++知识点&nbsp;(3)</a>&nbsp;&nbsp;
+            
+            <a href="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html">操作系统&nbsp;(7)</a>&nbsp;&nbsp;
+            
+            <a href="%E7%AE%97%E6%B3%95.html">算法&nbsp;(9)</a>&nbsp;&nbsp;
+            
+            <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络&nbsp;(2)</a>&nbsp;&nbsp;
+            
+            </p>
+            </li>
+            
+             
+            
+            <li>
+            <a href="netcode.html">2 网络相关&nbsp;(1)</a>
+            <p>
+            
+            <a href="%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.html">网络编程&nbsp;(1)</a>&nbsp;&nbsp;
+            
+            </p>
+            </li>
+            
+             
+      </div>
+      <!-- 最新文章 -->
+      <div class="meta-item meta-comments">
+          <h2 class="meta-title">RECENT POSTS</h2>
+
+          
+          
+         <li>
+           <a href="16766492105930.html">目录</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760129133722.html">知识体系</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760074281447.html">找工作</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760001982195.html">C/C++基础知识点</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16766496434569.html">1 基础</a><br>
+         </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           
+
+      </div>
+  </div>
+</div>
+</footer>
+
+<!--评论变量判断 -->
+      
+<!-- 评论end -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+
+
+    <title>
+      
+    1 概述 - LancerStadium
+    
+    </title>
+
+
+  <link href="asset/css/style.css" rel="stylesheet" > 
+  <link href="asset/js/xcode.min.css" rel="stylesheet">
+  <script src="asset/js/headroom.js"></script>
+
+  <!-- <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="asset/css/font-awesome.css">
+ -->
+
+  <!-- <script src="asset/highlightjs/highlight.pack.js"></script> -->
+  <!-- <link href="asset/highlightjs/styles/solarized_light.css" media="screen, projection" rel="stylesheet" type="text/css"> -->
+  <!-- <script>hljs.initHighlightingOnLoad();</script> -->
+
+
+  </head>
+
+  <!-- 主体开始 -->
+  <!-- <body class="" gtools_scp_screen_capture_injected="true"> -->
+  <!-- 上面为主页白底色版本 -->
+    
+<body class="bg-grey" gtools_scp_screen_capture_injected="true" data-feedly-mini="yes">
+<!-- 上面是主页灰底色版本 -->
+
+<!--[if lt IE 8]>
+<div class="browsehappy" role="dialog">
+    当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>。
+</div>
+<![endif]-->
+<!-- 头部位置 -->
+
+<header id="header" class="header bg-white headroom">
+  <div class="navbar-container"> 
+    <a href="index.html" class="navbar-logo"><img src="asset/img/K-logo.png"> </a>
+    <div class="navbar-menu"> 
+
+        
+        <a href="index.html">Home</a>
+        
+        <a href="archives.html">Archives</a>
+        
+        
+    </div> 
+    <!-- 搜索框体 -->
+    <!--  <div class="navbar-search" onclick="">
+        <span class="icon-search"></span>
+        <form id="search" method="post" action="/" role="search">
+          <span class="search-box">
+            <input type="text" id="input" class="input" name="s" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
+          </span>
+        </form>
+    </div> -->
+
+    <div class="navbar-mobile-menu" onclick=""> 
+      <span class="icon-menu cross"><span class="middle"></span></span> 
+        <ul> 
+          
+          <li>
+          <a href="index.html">Home</a>
+          </li>
+          
+          <li>
+          <a href="archives.html">Archives</a>
+          </li>
+          
+        </ul> 
+    </div> 
+  </div> 
+</header>
+<!-- 头部结束 --> <!-- post 开始 -->
+<div class="bg-white" gtools_scp_screen_capture_injected="true" data-feedly-mini="yes">
+	<article class="main-content page-page" style="max-width: 700px;padding: 110px 25px 20px" itemscope="" itemtype="http://schema.org/Article">
+		<div class="post-header">
+			<!-- title -->
+			<div class="post-header">
+				<h1 class="post-title itemprop="name headline">1 概述</h1>	
+				<div class="post-data">
+					<time datetime="2023-02-17T23:56:28+08:00" pubdate data-updated="true">2023/02/17</time>
+				</div>
+			</div>
+		</div>
+	<div id="post-content" class="post-content" itemprop="articleBody"> 
+		<p class="post-tags"> 
+		
+		<a href='%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html'>操作系统</a>&nbsp;
+		
+		</p>
+	<!-- 正文 -->
+		<p>
+		<ul>
+<li><a href="#1%E6%A6%82%E8%BF%B0">1 概述</a>
+<ul>
+<li><a href="#1-1%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81">1.1 基本特征</a></li>
+<li><a href="#1-2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD">1.2 基本功能</a></li>
+<li><a href="#1-3%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8">1.3 系统调用</a></li>
+<li><a href="#1-4%E5%AE%8F%E5%86%85%E6%A0%B8%E5%92%8C%E5%BE%AE%E5%86%85%E6%A0%B8">1.4 宏内核和微内核</a></li>
+<li><a href="#1-5%E4%B8%AD%E6%96%AD%E5%88%86%E7%B1%BB">1.5 中断分类</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h3><a id="1-1%E5%9F%BA%E6%9C%AC%E7%89%B9%E5%BE%81" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.1 基本特征</h3>
+<p>1.并发</p>
+<ul>
+<li><strong>并发</strong>是指宏观上在一段时间内能同时运行多个程序，而<strong>并行</strong>则指同一时刻能运行多个指令。</li>
+<li><strong>并行</strong>需要硬件支持，如多流水线、多核处理器（CPU/GPU）或者分布式计算系统。</li>
+<li>操作系统通过引入进程和线程，使得程序能够<strong>并发运行</strong>。</li>
+</ul>
+<p>2.共享</p>
+<ul>
+<li><strong>共享</strong>是指系统中的资源可以被多个进程共同使用。</li>
+<li>两种共享方式：互斥共享和同时共享。</li>
+<li>互斥共享的资源称为临界资源，例如打印机等，在同一时刻只允许一个进程访问，需要用同步机制来实现互斥访问。</li>
+</ul>
+<p>3.虚拟</p>
+<ul>
+<li><strong>虚拟</strong>技术把一个物理实体转换为多个逻辑实体。</li>
+<li>主要有两种虚拟技术：<strong>时（时间）分复用技术</strong>和<strong>空（空间）分复用技术</strong>。</li>
+<li>多个进程能在同一个处理器上并发执行使用了<strong>时分复用技术</strong>，让每个进程轮流占用处理器，每次只执行一小个时间片并快速切换。</li>
+<li>虚拟内存使用了<strong>空分复用技术</strong>，它将物理内存抽象为地址空间，每个进程都有各自的地址空间。地址空间的页被映射到物理内存，地址空间的页并不需要全部在物理内存中，当使用到一个没有在物理内存的页时，执行页面置换算法，将该页置换到内存中。</li>
+</ul>
+<p>4.异步</p>
+<ul>
+<li>异步指进程不是一次性执行完毕，而是走走停停，以不可知的速度向前推进。</li>
+</ul>
+<h3><a id="1-2%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.2 基本功能</h3>
+<ol>
+<li>进程管理：进程控制、进程同步、进程通信、死锁处理、处理机调度等。</li>
+<li>内存管理：内存分配、地址映射、内存保护与共享、虚拟内存等。</li>
+<li>文件管理：文件存储空间的管理、目录管理、文件读写管理和保护等。</li>
+<li>设备管理：完成用户的 I/O 请求，方便用户使用各种设备，并提高设备的利用率。主要包括缓冲管理、设备分配、设备处理、虛拟设备等。</li>
+</ol>
+<h3><a id="1-3%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.3 系统调用</h3>
+<ul>
+<li>Linux系统调用：<br />
+<img src="media/16760073501464/20200331233225699.png" alt="20200331233225699" /></li>
+</ul>
+<ol>
+<li>
+<p>进程管理：</p>
+<ul>
+<li>创建进程的系统调用叫fork；</li>
+<li>创建一个新的进程需要老的进程调用fork来实现，其中老的简称叫父进程，新的进程叫子进程</li>
+<li>当父进程调用fork创建进程的时候，子进程将各个子系统为父进程创建的数据结构也全部拷贝了一份；如果不进行特殊处理，父进程和子进程按照相同的程序执行下去，</li>
+<li>需要根据fork系统调用的返回值来判断进程是子进程还是父进程。对于fork系统调用的返回值，如果是子进程返回0，如果是父进程，返回子进程的进程号。</li>
+<li>父进程通过waitpid可以确定子进程的状态，通过将子进程的进程号作为参数传递给waitpid可以得知子进程是否运行完成。</li>
+</ul>
+</li>
+<li>
+<p>内存管理：</p>
+<ul>
+<li>每个进程都有独立的进程内存空间</li>
+<li>内存空间分为：存储代码的代码段和存储进程产生数据的数据段</li>
+<li>对于数据段，局部变量部分执行完某函数就会释放内存，也会有动态内存分配</li>
+<li>进程的内存是在需要的时候进行分配的，其中分配的并不是真实的物理内存，只有在写入数据的时候才会触发中断分配物理内存；</li>
+<li>当分配的内存数量比较小的时候使用brk分配；</li>
+<li>当分配的内存数量大的时候使用mmap分配一块大的内存。</li>
+</ul>
+</li>
+<li>
+<p>文件管理：</p>
+<ul>
+<li>对于已经有的文件使用open打开文件、close关闭文件；</li>
+<li>对于没有的文件使用creat创建文件；</li>
+<li>打开后的文件使用lseek跳到文件的某个位置；</li>
+<li>对文件的内容进行读写，读的系统调用是read、写的系统调用是write；</li>
+<li>切皆文件，启动进程需要的是二进制文件、加载配置是文本文件、访问的是设备文件等；</li>
+<li>每个文件，Linux都会分配一个文件描述符，是一个整数，通过文件描述符可以使用系统调用；</li>
+</ul>
+</li>
+<li>
+<p>信号处理</p>
+<ul>
+<li>当程序遇到异常时需要发送一个signal给系统；</li>
+<li>CTRL+C是一个中断信号，正在执行的命令会退出；</li>
+<li>非法访问内存和硬件故障都会报错；</li>
+<li>用户可以通过kill函数，将一个用户信号发送给另一个进程；</li>
+<li>SIGKILL（用于终止一个进程的信号）和 SIGSTOP（用于中止一个进程的信号）</li>
+<li>每种信号都定义了默认的动作，例如硬件故障，默认终止；也可以提供信号处理函数，可以通过sigaction系统调用，注册一个信号处理函数</li>
+</ul>
+</li>
+<li>
+<p>进程间通讯</p>
+<ul>
+<li>msgget创建一个消息队列；</li>
+<li>msgsnd将消息发送给消息队列；</li>
+<li>消息接收方通过msgrcv从队列中取消息；</li>
+<li>如果交互信息比较多，通过共享内存的方式进行通信，shmget创建共享内存，shmat将共享内存映射到自己的内存空间</li>
+</ul>
+</li>
+<li>
+<p>网络通信</p>
+<ul>
+<li>网络插口：socket</li>
+<li>网络协议：TCP/IP网络协议</li>
+</ul>
+</li>
+<li>
+<p>glibc</p>
+<ul>
+<li>为程序员提供丰富的API，封装了操作系统的系统服务，即系统调用的封装；</li>
+<li>Glibc 下实现的 malloc、calloc、free 等函数用来分配和释放内存，都利用了内核的 sys_brk 的系统调用。</li>
+</ul>
+</li>
+</ol>
+<h3><a id="1-4%E5%AE%8F%E5%86%85%E6%A0%B8%E5%92%8C%E5%BE%AE%E5%86%85%E6%A0%B8" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.4 宏内核和微内核</h3>
+<ol>
+<li>
+<p>宏内核：宏内核是将操作系统功能作为一个紧密结合的整体放到内核。由于各模块共享信息，因此有<strong>很高的性能</strong>。</p>
+</li>
+<li>
+<p>微内核：由于操作系统不断复杂，因此将一部分操作系统功能移出内核，从而降低内核的复杂性。移出的部分根据分层的原则划分成若干服务，相互独立。在微内核结构下，操作系统被划分成小的、定义良好的模块，只有微内核这一个模块运行在内核态，其余模块运行在用户态。因为需要频繁地在用户态和核心态之间进行切换，所以会<strong>有一定的性能损失</strong>。<br />
+<img src="media/16760073501464/16766366968104.jpg" alt="" /></p>
+</li>
+</ol>
+<h3><a id="1-5%E4%B8%AD%E6%96%AD%E5%88%86%E7%B1%BB" class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>1.5 中断分类</h3>
+<ol>
+<li>
+<p>外中断：由 CPU 执行指令以外的事件引起，如 I/O 完成中断，表示设备输入/输出处理已经完成，处理器能够发送下一个输入/输出请求。此外还有时钟中断、控制台中断等。</p>
+</li>
+<li>
+<p>异常：由 CPU 执行指令的内部事件引起，如非法操作码、地址越界、算术溢出等。</p>
+</li>
+<li>
+<p>陷入：在用户程序中使用系统调用。</p>
+</li>
+</ol>
+<hr />
+
+		</p>
+		<!-- 侧边导航条 -->
+		<div id="directory-content" class="directory-content">
+    		<div id="directory" style="margin-left: 50px;margin-top: 120px"></div>
+		</div>
+	<!-- JS -->
+	<script>
+		var postDirectoryBuild = function() {
+		    var postChildren = function children(childNodes, reg) {
+		        var result = [],
+		            isReg = typeof reg === 'object',
+		            isStr = typeof reg === 'string',
+		            node, i, len;
+		        for (i = 0, len = childNodes.length; i < len; i++) {
+		            node = childNodes[i];
+		            if ((node.nodeType === 1 || node.nodeType === 9) &&
+		                (!reg ||
+		                isReg && reg.test(node.tagName.toLowerCase()) ||
+		                isStr && node.tagName.toLowerCase() === reg)) {
+		                result.push(node);
+		            }
+		        }
+		        return result;
+		    },
+		    createPostDirectory = function(article, directory, isDirNum) {
+		        var contentArr = [],
+		            titleId = [],
+		            levelArr, root, level,
+		            currentList, list, li, link, i, len;
+		        levelArr = (function(article, contentArr, titleId) {
+		            var titleElem = postChildren(article.childNodes, /^h\d$/),
+		                levelArr = [],
+		                lastNum = 1,
+		                lastRevNum = 1,
+		                count = 0,
+		                guid = 1,
+		                id = 'directory' + (Math.random() + '').replace(/\D/, ''),
+		                lastRevNum, num, elem;
+		            while (titleElem.length) {
+		                elem = titleElem.shift();
+		                contentArr.push(elem.innerHTML);
+		                num = +elem.tagName.match(/\d/)[0];
+		                if (num > lastNum) {
+		                    levelArr.push(1);
+		                    lastRevNum += 1;
+		                } else if (num === lastRevNum ||
+		                    num > lastRevNum && num <= lastNum) {
+		                    levelArr.push(0);
+		                    lastRevNum = lastRevNum;
+		                } else if (num < lastRevNum) {
+		                    levelArr.push(num - lastRevNum);
+		                    lastRevNum = num;
+		                }
+		                count += levelArr[levelArr.length - 1];
+		                lastNum = num;
+		                elem.id = elem.id || (id + guid++);
+		                titleId.push(elem.id);
+		            }
+		            if (count !== 0 && levelArr[0] === 1) levelArr[0] = 0;
+
+		            return levelArr;
+		        })(article, contentArr, titleId);
+		        currentList = root = document.createElement('ul');
+		        dirNum = [0];
+		        for (i = 0, len = levelArr.length; i < len; i++) {
+		            level = levelArr[i];
+		            if (level === 1) {
+		                list = document.createElement('ul');
+		                if (!currentList.lastElementChild) {
+		                    currentList.appendChild(document.createElement('li'));
+		                }
+		                currentList.lastElementChild.appendChild(list);
+		                currentList = list;
+		                dirNum.push(0);
+		            } else if (level < 0) {
+		                level *= 2;
+		                while (level++) {
+		                    if (level % 2) dirNum.pop();
+		                    currentList = currentList.parentNode;
+		                }
+		            }
+		            dirNum[dirNum.length - 1]++;
+		            li = document.createElement('li');
+		            link = document.createElement('a');
+		            link.href = '#' + titleId[i];
+		            link.innerHTML = !isDirNum ? contentArr[i] :
+		                dirNum.join('.') + ' ' + contentArr[i] ;
+		            li.appendChild(link);
+		            currentList.appendChild(li);
+		        }
+		        directory.appendChild(root);
+		    };
+		    createPostDirectory(document.getElementById('post-content'),document.getElementById('directory'), true);
+		};
+		postDirectoryBuild();
+	</script>	
+	<!-- 版权声明 -->
+		<p class="post-info" style="color: #BCBDB6">
+				本文由 <a style="color: #BCBDB6" href="#">LancerStadium
+				</a> 创作，采用 <a style="color: #BCBDB6" href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a> 国际许可协议进行许可<br>本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名<br>最后编辑时间为: 2023-02-17T23:56:28+08:00
+		</p>
+	<!-- 导航 -->
+			<div id="comments" class="clearfix" style="padding: 0px;">
+				<footer class="post-footer clearfix">	    			
+				    <div class="meta">
+					    
+					    <P style="float: left;">
+					    	<a href="16760073501464.html" 
+					        title="Previous Post: 操作系统">&laquo; 操作系统</a>
+					    </p>
+					    <p style="float:right; ">
+					    	
+					    	
+					        <a href="16766494855408.html" 
+					        title="Next Post: 2 进程管理">2 进程管理 &raquo;</a>
+					    </p> 
+					    
+				    </div>
+			  	</footer>
+	<!-- footer end -->
+			</div>		
+	</div>
+</article>
+			<!-- 评论区 -->
+			<div id="respond-post-269" class="comment-container"> 
+				<div id="comments" class="clearfix">
+
+				<script type="text/javascript" src="/pm/hashover/hashover.js"></script>
+<noscript>You must have JavaScript enabled to use the comments.</noscript>
+
+<!-- 评论区结束 -->
+					<div>
+					
+					</div>
+
+				</div>
+			</div>
+</div>
+<!-- headroom -->
+<script type="text/javascript"> 
+(function() {
+    var header = new Headroom(document.querySelector("#header"), {
+        tolerance: 3,
+        offset : 80,
+        classes: {
+          initial: "animated",
+          pinned: "slideDown",
+          unpinned: "slideUp"
+        }
+    });
+    header.init();
+}());
+</script>  <footer id="footer" class="footer" style="background-color: #030501;color: #FFFFFE;">
+  <div class="footer-meta">
+    <div class="footer-container">
+      <!-- 版权说明 -->
+      <div class="meta-item meta-copyright">
+        <div class="meta-copyright-info">
+          <h2 class="meta-title">INFO</h2>
+          <div class="info-text">  
+              <p>Copyright &copy; 2017 <br>
+              <span class="credit">Powered by 
+              <a target="_blank" href="http://zh.mweb.im/">MWeb</a> 
+              </span>
+              <p>Theme Design by <a href="https://www.linpx.com/" target="_blank">Chakhsu</a></p>
+              <p>Migrating to Mweb by <a href="http://metaidea.cn">idken</a></p>
+              </p> 
+          </div>                  
+        </div>
+      </div>  
+      <!-- Categories -->
+      <div class="meta-item meta-comments">
+          <h2 class="meta-title">CATEGORIES</h2>  
+             
+            
+            <li>
+            <a href="pre.html">0 序言&nbsp;(3)</a>
+            <p>
+            
+            </p>
+            </li>
+            
+             
+            
+            <li>
+            <a href="cppbase.html">1 C++基础&nbsp;(21)</a>
+            <p>
+            
+            <a href="cpppoint.html">C++知识点&nbsp;(3)</a>&nbsp;&nbsp;
+            
+            <a href="%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F.html">操作系统&nbsp;(7)</a>&nbsp;&nbsp;
+            
+            <a href="%E7%AE%97%E6%B3%95.html">算法&nbsp;(9)</a>&nbsp;&nbsp;
+            
+            <a href="%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.html">计算机网络&nbsp;(2)</a>&nbsp;&nbsp;
+            
+            </p>
+            </li>
+            
+             
+            
+            <li>
+            <a href="netcode.html">2 网络相关&nbsp;(1)</a>
+            <p>
+            
+            <a href="%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.html">网络编程&nbsp;(1)</a>&nbsp;&nbsp;
+            
+            </p>
+            </li>
+            
+             
+      </div>
+      <!-- 最新文章 -->
+      <div class="meta-item meta-comments">
+          <h2 class="meta-title">RECENT POSTS</h2>
+
+          
+          
+         <li>
+           <a href="16766492105930.html">目录</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760129133722.html">知识体系</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760074281447.html">找工作</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16760001982195.html">C/C++基础知识点</a><br>
+         </li>
+          
+          
+          
+         <li>
+           <a href="16766496434569.html">1 基础</a><br>
+         </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+           
+
+      </div>
+  </div>
+</div>
+</footer>
+
+<!--评论变量判断 -->
+      
+<!-- 评论end -->
+
+
+
+</body>
+</html>
