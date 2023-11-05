@@ -1,26 +1,35 @@
-name: github pages
+name: mdbook pages
 
+# 触发条件：在 push 到 main 分支后
 on:
   push:
     branches:
       - main
   pull_request:
 
+# 任务
 jobs:
   deploy:
+    # 服务器环境： 最新版 Ubuntu
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
-
+      # 0 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v2
+        with: 
+          persist-credentials: false
+      
+      # 1 生成静态文件
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
         with:
           mdbook-version: 'latest'
-
+      
       - run: mdbook build
-
+      
+      # 2 部署到 github pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
