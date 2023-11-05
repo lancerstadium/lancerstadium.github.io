@@ -1,6 +1,6 @@
 # Summary
 
-[前言](./book/beyond.md)
+[前言](./index.md)
 
 ---
 
