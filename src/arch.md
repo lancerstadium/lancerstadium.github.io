@@ -1,14 +1,3 @@
 # 计算机体系结构
 
-
-
-开天辟地，先来一段`hello, world`：
-
-```cpp
-#include <stdio.h>
-
-int main() {
-	printf("Hello, world!\n");
-	return 0;
-}
-```
+- 这里是计算机体系结构
