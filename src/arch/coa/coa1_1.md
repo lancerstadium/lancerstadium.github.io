@@ -29,7 +29,7 @@
 
 下图描述了一台接收并处理输入信息、产生输出结构的可编程数字计算机：
 
-![image-20231105225311062](D:\code\md_book\lancerstadium.github.io\src\arch\coa\coa1_1.assets\image-20231105225311062.png)
+![image-20231105225311062](./coa1_1.assets/image-20231105225311062.png)
 
 
 
@@ -40,7 +40,7 @@
 1. 要处理的数据（Data）
 2. 定义处理数据的程序（Program）
 
-![image-20231105225520366](./coa1_1.assets./image-20231105225520366.png)
+![image-20231105225520366](./coa1_1.assets/image-20231105225520366.png)
 
 
 
