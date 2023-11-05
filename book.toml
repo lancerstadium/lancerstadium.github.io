@@ -4,3 +4,8 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Rust Lab"
+
+
+[output.html.fold]
+enable = true
+level = 3
