@@ -18,7 +18,7 @@
 
 
 
-![image-20231105223802997](D:\code\md_book\lancerstadium.github.io\src\arch\coa\coa1_0.assets\image-20231105223802997.png)
+![image-20231105223802997](./coa1_0.assets/image-20231105223802997.png)
 
 
 

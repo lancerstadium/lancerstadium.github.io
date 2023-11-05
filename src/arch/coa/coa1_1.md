@@ -19,7 +19,7 @@
 
 一个简易的计算机结构如下：
 
-![image-20231105224758045](D:\code\md_book\lancerstadium.github.io\src\arch\coa\coa1_1.assets\image-20231105224758045.png)
+![image-20231105224758045](./coa1_1.assets/image-20231105224758045.png)
 
 - 信息（程序Program、数据Data）保存在存储器中，为实现不同目标，计算机会使用不同类型的存储器（Cache、主存、辅存等）。
 - Cache（高速缓存）存储常用信息，主存存储大量工作信息，辅存（磁盘、CD-ROM）存储海量信息。
@@ -40,7 +40,7 @@
 1. 要处理的数据（Data）
 2. 定义处理数据的程序（Program）
 
-![image-20231105225520366](D:\code\md_book\lancerstadium.github.io\src\arch\coa\coa1_1.assets\image-20231105225520366.png)
+![image-20231105225520366](./coa1_1.assets./image-20231105225520366.png)
 
 
 
@@ -61,7 +61,7 @@
 
 程序的执行过程如下：
 
-![image-20231105230726559](D:\code\md_book\lancerstadium.github.io\src\arch\coa\coa1_1.assets\image-20231105230726559.png)
+![image-20231105230726559](./coa1_1.assets/image-20231105230726559.png)
 
 
 
