@@ -21,7 +21,7 @@
   - [第一章 计算机抽象及相关技术](./arch/cod/cod1_0.md)
     - [CA 八个伟大思想](./arch/cod/cod1_1.md)
     - [计算机性能](./arch/cod/cod1_2.md)
-  
+  - [第二章 指令：计算机的语言](./arch/cod/cod2_0.md)
 
 - [二进制翻译简介](./bt/intro.md)
 - [hybitor - 混合翻译器](./bt/hybitor.md)
