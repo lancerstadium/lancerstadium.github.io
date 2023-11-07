@@ -12,7 +12,7 @@
 
 **系统CPU时间**（*System time*）：为执行程序花费在操作系统上的时间。
 
-**时钟周期长度**（*Cycle length*）：每个时钟周期持续的时间，**时钟频率**的倒数。
+**时钟周期长度**（*Cycle length*）：每个时钟周期持续的时间，**时钟频率**（*Clock Frequency*）的倒数。
 
 **时钟周期数**（*CPU cycle*）：处理器时钟在固定频率下运行。
 
@@ -27,6 +27,14 @@ CPU_exec_time = CPU_cycles * Cycle_length
 ```
 CPU_exec_time = N_insts * CPI * Cycle_length
 ```
+
+**每秒百万条指令数**（*MIPS*）：程序速度的一种度量。（无法用 MIPS 比较不同 ISA 的计算机；其次，一台计算机上不同程序也有不同的 MIPS）
+
+```python
+MIPS = N_insts / (exec_time * 10^6) = Clock_frequency / (CPI * 10^6)
+```
+
+
 
 
 
@@ -52,3 +60,46 @@ CPI_1 = (2*1 + 1*2 + 2*3) / 5 = 2.0
 CPI_2 = (4*1 + 1*2 + 1*3) / 6 = 1.5
 ```
 
+
+
+## 功耗墙
+
+
+
+![image-20231107152234197](cod1_2.assets/image-20231107152234197.png)
+
+
+
+## SPEC CPU 基准评测
+
+
+
+![image-20231107152420734](cod1_2.assets/image-20231107152420734.png)
+
+
+
+## 谬误 & 陷阱
+
+
+
+1. **谬误1：**期望总性能与改进大小成正比
+
+![image-20231107153320041](cod1_2.assets/image-20231107153320041.png)
+
+
+
+2. **谬误2**
+
+![image-20231107153408479](cod1_2.assets/image-20231107153408479.png)
+
+
+
+3. **谬误3**
+
+![image-20231107153502725](cod1_2.assets/image-20231107153502725.png)
+
+
+
+4. **陷阱1**
+
+![image-20231107153554490](cod1_2.assets/image-20231107153554490.png)
