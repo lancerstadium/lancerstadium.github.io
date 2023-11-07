@@ -5,6 +5,7 @@
 > - [在WSL2中使用perf性能剖析工具](https://zhuanlan.zhihu.com/p/600483539)
 > - [虚拟机Linux使用perf stat提示cycles not supported](https://www.cnblogs.com/azureology/p/13913540.html)
 > - [13代酷睿下Vmware无法开启虚拟化CPU性能计数器](https://www.zhihu.com/question/597146155)
+> - [Perf tools support for Intel® Processor Trace - Perf Wiki --- 性能工具对英特尔®处理器跟踪的支持](https://perf.wiki.kernel.org/index.php/Perf_tools_support_for_Intel®_Processor_Trace)
 
 
 
