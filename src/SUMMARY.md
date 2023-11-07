@@ -19,15 +19,9 @@
     - [计算机系统概览]()
 - [COD | 计算机组成与设计 RISC-V](./arch/cod.md)
   - [第一章 计算机抽象及相关技术](./arch/cod/cod1_0.md)
-    - [计算机体系结构八个伟大思想](./arch/cod/cod1_1.md)
-
-- [CSAPP | 深入理解计算机系统](./arch/csapp.md)
-
-
-
----
-
-# 二进制翻译
+    - [CA 八个伟大思想](./arch/cod/cod1_1.md)
+    - [计算机性能](./arch/cod/cod1_2.md)
+  
 
 - [二进制翻译简介](./bt/intro.md)
 - [hybitor - 混合翻译器](./bt/hybitor.md)
