@@ -4,4 +4,4 @@
 >
 >- [Index of /tlatoolbox/ci/products (inria.fr)](https://tla.msr-inria.inria.fr/tlatoolbox/ci/products/)
 >
->
+>- [Learn TLA+ — Learn TLA+](https://learntla.com/)
