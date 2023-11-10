@@ -1,5 +1,11 @@
 # ELF 文件加载解析
 
+> 参考资料：
+>
+> 1. [ELF加载器的原理与实现_elf loader](https://blog.csdn.net/GoolyOh/article/details/119801160)
+> 2. [内核第一条指令 | rCore-Tutorial-Book](https://rcore-os.cn/rCore-Tutorial-Book-v3/chapter1/3first-instruction-in-kernel1.html)
+> 3. [linux中ELF二进制程序解析](https://blog.csdn.net/weixin_39631572/article/details/112073152?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-4-112073152-blog-131557131.235^v38^pc_relevant_anti_t3_base&spm=1001.2101.3001.4242.3&utm_relevant_index=7)
+
 
 
 ## 程序内存布局
@@ -19,7 +25,7 @@
 
 - `.rodata`：（已初始化）只读的全局数据，常数、常量字符串；
 - `.data`：（已初始化）可修改的全局数据；
-- `.bss`：（未初始化）全局数据，由程序加载器（*Loader*）代为清零；
+- `.bss`：（未初始化/初始化为0）全局&静态数据，由程序加载器（*Loader*）代为清零；
 - 堆（*heap*）：用来存放程序运行时动态分配的数据，向高地址增长，如：`new`，`melloc`；
 - 栈（*stack*）：用作函数调用上下文保存与恢复，每个函数的局部变量被编译器放于栈帧，向低地址增长。
 
@@ -72,7 +78,31 @@
 
 
 
-## ELF 头信息
+## ELF 文件视图
+
+一个 ELF 可执行文件可以通过两个视图去分析：
+
+- **链接视图**（*Link View*）：以节（*Section*）为单位；
+- **执行视图**（*Exec View*）：以段（*Segment*）为单位；
+
+![elfv](elfload.assets/elfv.png)
+
+
+
+
+
+
+
+
+
+## ELF 头信息（ELF header）
+
+ELF文件的最开始是**ELF文件头**（*ELF Header*）：包含了描述整个文件的基本属性。ELF文件分为文件头和文件体两部分：
+
+1. 先用 *ELF header* 从文件全局概要出程序中程序头表（*phdr*）、节头表（*shdr*）的位置和大小等信息；
+2. 然后从程序头表和节头表中分别解析出各个段和节的位置和大小等信息；
+
+
 
 
 
