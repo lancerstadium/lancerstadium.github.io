@@ -36,7 +36,7 @@
 - [hybitor - 混合翻译器](./bt/hybitor.md)
   - [输入参数解析](./bt/hybitor/argparse.md)
   - [ELF文件加载](./bt/hybitor/elfload.md)
-  - [ELF文件装载执行](./hybitor/elfexec.md)
+  - [ELF文件装载执行](./bt/hybitor/elfexec.md)
   - [内存模拟](./bt/hybitor/mem.md)
 - [perf - 性能测试](./bt/perf.md)
   - [perf 安装](./bt/perf/install.md)
