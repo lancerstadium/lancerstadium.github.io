@@ -23,7 +23,16 @@
     - [计算机性能](./arch/cod/cod1_2.md)
   - [第二章 指令：计算机的语言](./arch/cod/cod2_0.md)
     - [指令系统](./arch/cod/cod2_1.md)
+
+
+
+# 二进制翻译
+
 - [二进制翻译简介](./bt/intro.md)
+  - [端到端翻译](./bt/intro/isa2isa.md)
+  - [Cache优化](./bt/intro/cache.md)
+  - [软硬件结合](./bt/intro/swhw.md)
+  - [动静结合](./bt/intro/hbt.md)
 - [hybitor - 混合翻译器](./bt/hybitor.md)
   - [输入参数解析](./bt/hybitor/argparse.md)
   - [ELF文件加载](./bt/hybitor/elfload.md)
@@ -31,7 +40,6 @@
   - [内存模拟](./bt/hybitor/mem.md)
 - [perf - 性能测试](./bt/perf.md)
   - [perf 安装](./bt/perf/install.md)
-
 - [qemu - 源码分析](qemu.md)
 
 
