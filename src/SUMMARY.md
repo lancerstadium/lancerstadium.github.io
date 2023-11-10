@@ -26,6 +26,15 @@
 
 
 
+# Linux
+
+- [Linux常用命令](./linux/common.md)
+  - [grep & sed & awk](./linux/common/gsa.md)
+
+- [Linux-core]()
+
+
+
 # 二进制翻译
 
 - [二进制翻译简介](./bt/intro.md)
