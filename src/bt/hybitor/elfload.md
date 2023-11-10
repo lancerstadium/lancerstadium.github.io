@@ -89,18 +89,134 @@
 
 
 
-
-
-
-
-
-
 ## ELF 头信息（ELF header）
 
 ELF文件的最开始是**ELF文件头**（*ELF Header*）：包含了描述整个文件的基本属性。ELF文件分为文件头和文件体两部分：
 
 1. 先用 *ELF header* 从文件全局概要出程序中程序头表（*phdr*）、节头表（*shdr*）的位置和大小等信息；
 2. 然后从程序头表和节头表中分别解析出各个段和节的位置和大小等信息；
+
+```c
+typedef struct elf64_hdr {
+ 	unsigned char e_ident[EI_NIDENT]; 
+ 	Elf64_Half e_type;		// 文件类型
+ 	Elf64_Half e_machine;	// 体系结构
+ 	Elf64_Word e_version;	// 版本信息
+ 	Elf64_Addr e_entry;     // 虚拟地址入口
+ 	Elf64_Off e_phoff;      // phdr在文件内偏移量
+ 	Elf64_Off e_shoff;      // shdr在文件内偏移量
+ 	Elf64_Word e_flags;		// 处理器相关标志
+ 	Elf64_Half e_ehsize;	// elf header大小
+ 	Elf64_Half e_phentsize;	// phdr大小
+ 	Elf64_Half e_phnum;		// 段个数
+ 	Elf64_Half e_shentsize;	// shdr大小
+ 	Elf64_Half e_shnum;		// 节个数
+ 	Elf64_Half e_shstrndx;
+} Elf64_Ehdr;
+```
+
+`e_ident[EI_NIDENT]`是16字节大小的数组，用来表示ELF字符等信息，开头四个字节是固定不变的elf文件魔数（*Magic Number*）：
+
+```c
+e_ident[0..3] = 0x7fELF	// 魔数
+e_ident[4] 		// 位数：1(32bit), 2(64bit)
+e_ident[5]		// 大小端：1(LSB), 2(MSB)
+e_ident[6]		// 版本
+e_ident[7-15]	// 保留位
+```
+
+
+
+`e_type`（2字节）指定了文件类型：
+
+```c
+// include/uapi/linux/elf.h
+#define ET_NONE   0     // 未知目标文件格式
+#define ET_REL    1     // 可重定位文件
+#define ET_EXEC   2     // 可执行文件
+#define ET_DYN    3     // 动态共享目标文件
+#define ET_CORE   4     // core文件，程序崩溃时内存映像的转储格式
+#define ET_LOPROC 0xff00    // 特定处理器文件的扩展下界
+#define ET_HIPROC 0xffff    // 特定处理器文件的扩展上界
+```
+
+
+
+`e_machine`（2字节）：描述目标文件体系结构：
+
+```c
+// include/uapi/linux/elf-em.h
+#define EM_NONE     0
+#define EM_M32      1
+#define EM_SPARC    2
+#define EM_386      3
+#define EM_68K      4
+#define EM_88K      5
+#define EM_486      6   /* Perhaps disused */
+#define EM_860      7
+#define EM_MIPS     8   /* MIPS R3000 (officially, big-endian only) */
+                /* Next two are historical and binaries and
+                   modules of these types will be rejected by
+                   Linux.  */
+#define EM_MIPS_RS3_LE  10  /* MIPS R3000 little-endian */
+#define EM_MIPS_RS4_BE  10  /* MIPS R4000 big-endian */
+#define EM_PARISC   15  /* HPPA */
+#define EM_SPARC32PLUS  18  /* Sun's "v8plus" */
+#define EM_PPC      20  /* PowerPC */
+......
+```
+
+
+
+
+
+
+
+## 程序头表（phdr）
+
+**程序头表**（也称为段表）是一个描述文件中各个段的数组，程序头表描述了文件中各个段在文件中的偏移位置及段的属性等信息；从程序头表里可以得到每个段的所有信息，包括代码段和数据段等：
+
+```c
+typedef struct elf64_phdr {
+ 	Elf64_Word p_type;		// 程序段类型
+ 	Elf64_Word p_flags;		// 本段相关标志
+ 	Elf64_Off p_offset;     // 本段在文件内起始偏移
+ 	Elf64_Addr p_vaddr;     // 本段在内存中虚拟地址
+ 	Elf64_Addr p_paddr;     // 本段在内存中物理地址
+ 	Elf64_Xword p_filesz;   // 段在文件中大小
+ 	Elf64_Xword p_memsz;    // 段在内存中大小
+ 	Elf64_Xword p_align;    // 本段的对齐方式
+} Elf64_Phdr;
+```
+
+对于`p_type`（4字节）：指明段类型
+
+```c
+// include/uapi/linux/elf.h
+#define PT_NULL    0 // 忽略 
+#define PT_LOAD    1 // 可加载程序段
+#define PT_DYNAMIC 2 // 动态链接信息
+#define PT_INTERP  3 // 动态加载器名称
+#define PT_NOTE    4 // 辅助的附加信息 
+#define PT_SHLIB   5 // 保留
+#define PT_PHDR    6 // 程序头表
+#define PT_TLS     7               /* Thread local storage segment */
+#define PT_LOOS    0x60000000      /* OS-specific */
+#define PT_HIOS    0x6fffffff      /* OS-specific */
+#define PT_LOPROC  0x70000000
+#define PT_HIPROC  0x7fffffff
+```
+
+对于`p_flag`（4字节）：指明段标志
+
+```c#
+// include/uapi/linux/elf.h
+#define PF_R        0x4  // 可读
+#define PF_W        0x2  // 可写
+#define PF_X        0x1  // 可执行
+```
+
+
 
 
 
