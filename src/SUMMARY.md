@@ -75,6 +75,12 @@
 
 
 
+# AI
+
+- [stable diffusion](./ai/sd.md)
+
+
+
 # 实用工具
 
 - [mdbook 使用](./tools/mdbook.md)
