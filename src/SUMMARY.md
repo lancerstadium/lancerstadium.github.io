@@ -24,6 +24,8 @@
   - [第二章 指令：计算机的语言](./arch/cod/cod2_0.md)
     - [指令系统](./arch/cod/cod2_1.md)
     - [RISC-V 指令格式](./arch/cod/cod2_2.md)
+    - [逻辑操作指令](./arch/cod/cod2_3.md)
+    - [决策指令](./arch/cod/cod2_4.md)
 - [CSAPP | 深入理解计算机系统](./arch/csapp.md)
 - [SCPU | 超标量处理器设计](./arch/scpu.md)
 
