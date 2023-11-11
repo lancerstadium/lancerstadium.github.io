@@ -23,6 +23,8 @@
     - [计算机性能](./arch/cod/cod1_2.md)
   - [第二章 指令：计算机的语言](./arch/cod/cod2_0.md)
     - [指令系统](./arch/cod/cod2_1.md)
+- [CSAPP | 深入理解计算机系统](./arch/csapp.md)
+- [SCPU | 超标量处理器设计](./arch/scpu.md)
 
 
 
