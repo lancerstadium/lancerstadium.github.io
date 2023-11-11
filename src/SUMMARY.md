@@ -70,6 +70,7 @@
 - [gdb](./software/gdb.md)
 - [make](./software/make.md)
 - [meson](./software/meson.md)
+- [scoop](./software/scoop.md)
 
 ---
 
