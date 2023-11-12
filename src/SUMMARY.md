@@ -55,6 +55,8 @@
   - [内存模拟](./bt/hybitor/mem.md)
 - [perf - 性能测试](./bt/perf.md)
   - [perf 安装](./bt/perf/install.md)
+  - [perf 基本使用](./bt/perf/basicuse.md)
+  - [ebpf 简介](./bt/perf/ebpf.md)
 - [qemu - 源码分析](qemu.md)
 
 
