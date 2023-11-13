@@ -1,14 +1,12 @@
 [book]
 authors = ["lancerstadium"]
-language = "en"
+language = "zh-CN"
 multilingual = false
 src = "src"
 title = "Rust Lab"
 
 [output.html]
-git-repository-url = "https://github.com/lancerstadium"
+theme = "theme"
+git-repository-url = "https://github.com/lancerstadium/"
 git-repository-icon = "fa-github"
 
-[output.html.fold]
-enable = true
-level = 3
