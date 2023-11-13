@@ -27,6 +27,7 @@
     - [逻辑操作指令](./arch/cod/cod2_3.md)
     - [决策指令](./arch/cod/cod2_4.md)
     - [寄存器与堆栈](./arch/cod/cod2_5.md)
+    - [ASCII 人机交互](./arch/cod/cod2_6.md)
 - [CSAPP | 深入理解计算机系统](./arch/csapp.md)
 - [SCPU | 超标量处理器设计](./arch/scpu.md)
 
