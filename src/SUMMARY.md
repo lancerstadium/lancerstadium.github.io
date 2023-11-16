@@ -59,7 +59,8 @@
   - [perf 安装](./bt/perf/install.md)
   - [perf 基本使用](./bt/perf/basicuse.md)
   - [ebpf 简介](./bt/perf/ebpf.md)
-- [qemu - 源码分析](qemu.md)
+- [qemu - 源码分析](./bt/qemu.md)
+- [FX!32 - 静态二进制翻译器](./bt/fx32.md)
 
 
 
