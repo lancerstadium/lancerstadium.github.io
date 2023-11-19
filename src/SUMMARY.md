@@ -82,6 +82,7 @@
 - [make](./software/make.md)
 - [meson](./software/meson.md)
 - [scoop](./software/scoop.md)
+- [git](./software/git.md)
 
 ---
 
@@ -93,6 +94,12 @@
 
 
 
+---
+
+
+
+
+
 # 实用工具
 
 - [mdbook 使用](./tools/mdbook.md)
@@ -101,7 +108,13 @@
 
 ---
 
+# 作业
 
+- [矩阵分析复习提纲](./hw/matrix.md)
+
+
+
+---
 
 # 杂项
 
