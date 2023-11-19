@@ -296,12 +296,28 @@ $$
 其中 $z=[x,-1]^T$ ，继续设解 $z$ 为单位范数向量，且 $Bz = r = -Dz$ ，则 $r$ 可以看作矩阵方程 $Bz=0$ 的总体最小二乘解：
 $$
 \begin{matrix}
-\min_{z} \left \| r \right \| ^2_2
+\min_{z} \left \| r \right \| ^2_2=\left \| Bz \right \| ^2_2
  \\s.t. z^Hz=1
 
 \end{matrix}
 $$
+Lagrange乘子函数为 $0$ ，得到 $ B^HBz=\lambda z $ ，问题即：
+$$
+min_x \frac{z^HB^HBz}{z^Hz}=\frac{\left \| Ax-b \right \|^2_2}{\left \| x \right \|^2_2+1}
+$$
+总体最小二乘解 $z$ 为 $B$ 的最小奇异值对应的右奇异向量
 
+设 $B=U\Sigma V^T$ 则有：
+
+1）单解：第n个奇异值明显大于第n+1个
+
+
+
+
+
+
+
+2）多解：最后若干个奇异值相同或非常接近
 
 
 
