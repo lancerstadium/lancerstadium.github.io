@@ -276,8 +276,31 @@ $$
 
 11. 总体最小二乘问题的解。
 
-如何解
+可表现为如下约束优化问题：
 
+$$
+\begin{matrix}
+\min_{\bigtriangleup A,\bigtriangleup b,x} \left \| \bigtriangleup A \right \| ^2_F+ \left \| \bigtriangleup b \right \| ^2_2
+ \\s.t. \quad (A+\bigtriangleup A)x=b+\bigtriangleup b
+
+\end{matrix}
+$$
+设 $B=[A,b]$ 为增广数据矩阵， $ D=[\bigtriangleup A, \bigtriangleup b] $ 为增广矫正矩阵，则：
+$$
+\begin{matrix}
+\min_{D,z} \left \| D \right \| ^2_F
+ \\s.t. (B+D)z=0
+
+\end{matrix}
+$$
+其中 $z=[x,-1]^T$ ，继续设解 $z$ 为单位范数向量，且 $Bz = r = -Dz$ ，则 $r$ 可以看作矩阵方程 $Bz=0$ 的总体最小二乘解：
+$$
+\begin{matrix}
+\min_{z} \left \| r \right \| ^2_2
+ \\s.t. z^Hz=1
+
+\end{matrix}
+$$
 
 
 
