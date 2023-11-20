@@ -84,6 +84,7 @@
 - [meson](./software/meson.md)
 - [scoop](./software/scoop.md)
 - [git](./software/git.md)
+- [wsl](./software/wsl.md)
 
 ---
 
