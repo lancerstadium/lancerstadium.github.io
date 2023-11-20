@@ -55,6 +55,7 @@
   - [ELF文件加载](./bt/hybitor/elfload.md)
   - [ELF文件装载执行](./bt/hybitor/elfexec.md)
   - [内存模拟](./bt/hybitor/mem.md)
+  - [符号执行工具](./bt/hybitor/syexec.md)
 - [perf - 性能测试](./bt/perf.md)
   - [perf 安装](./bt/perf/install.md)
   - [perf 基本使用](./bt/perf/basicuse.md)
