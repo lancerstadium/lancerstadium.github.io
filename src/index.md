@@ -11,7 +11,7 @@
 
 
 
-开天辟地，先来一段`hello, world`：
+开天辟地，先来一段 `hello, world`：
 
 ```cpp
 #include <stdio.h>
