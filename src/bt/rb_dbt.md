@@ -4,6 +4,8 @@
 >
 > 1. [fudan-ppi/Rule_based_DBT](https://github.com/fudan-ppi/Rule_based_DBT)
 > 2. [基于学习的动态二进制翻译方法](https://ppi.fudan.edu.cn/c0/cf/c36730a442575/page.htm)
+> 2. [Linaro Snapshots](https://snapshots.linaro.org/gnu-toolchain/)
+> 2. [Install Arm GNU Toolchain on Ubuntu 22.04 | Lindevs](https://lindevs.com/install-arm-gnu-toolchain-on-ubuntu)
 
 
 
@@ -17,51 +19,45 @@
 git clone https://github.com/fudan-ppi/Rule_based_DBT.git
 ```
 
-进入`qemu-dbt`文件夹，使用`pwd`查看绝对路径：
+进入`qemu-dbt`文件夹：
 
 ```shell
 cd ./Rule_based_DBT/qemu-dbt
-mkdir build
-pwd
+./configure --target-list=aarch64-linux-user
+make -j4
 ```
 
-![image-20231123210751243](rb_dbt.assets/image-20231123210751243.png)
+>备注：查看 Deep Learning DBT 编译安装 QEMU
 
-修改`config-host.mak`文件：
-
-```makefile
-prefix=[Your Path]/build
-...
-SRC_PATH=[Your Path]
-```
-
-![image-20231123211054668](rb_dbt.assets/image-20231123211054668.png)
-
-![image-20231123211737300](rb_dbt.assets/image-20231123211737300.png)
-
-
-
-
-
-
-
-## 构建错误
-
-
-
-报错1：
+安装clang，llvm和arm tool chain：
 
 ```
-/home/lancer/item/Rule_based_DBT/qemu-dbt/slirp/src/slirp.h:29:10: fatal error: sys/uio.h: No such file or directory
-   29 | #include <sys/uio.h>
-      |          ^~~~~~~~~~~
-compilation terminated.
-make[1]: *** [Makefile:44: /home/lancer/item/Rule_based_DBT/qemu-dbt/slirp/src/arp_table.o] Error 1
-make[1]: Leaving directory '/home/lancer/item/Rule_based_DBT/qemu-dbt/slirp'
-make: *** [Makefile:503: slirp/all] Error 2
+sudo apt install clang-15 llvm-15
+sudo apt install binutils-arm-linux-gnueabi
+sudo apt-get install gcc-multilib g++-multilib module-assistant
 ```
 
-你好
 
 
+修改`learning/arm/arm.py`：
+
+```python
+import re
+import copy
+import sys
+
+ARCH_STR = "arm"
+
+CC = "clang-15"
+LC = "llc-15"
+BC = "arm_bc"
+IR = "arm_ir"
+ASM = BC + ".s"
+ASM_D = BC + "_dump.s"
+OBJ = BC + ".o"
+
+AS = "arm-none-eabi-as"
+OBJDUMP = "/usr/bin/objdump"
+
+```
 
