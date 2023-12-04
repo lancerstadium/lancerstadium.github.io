@@ -29,6 +29,8 @@ make -j4
 
 >备注：查看 Deep Learning DBT 编译安装 QEMU
 
+
+
 安装clang，llvm和arm tool chain：
 
 ```
