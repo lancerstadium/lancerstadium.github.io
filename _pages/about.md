@@ -21,8 +21,9 @@ redirect_from:
 I am Tianshuo Lu (鲁天硕), a Master’s student (2023-2026) at [**Jiangnan University**](https://www.jiangnan.edu.cn/), advised by [**Prof. Zhilei Chai**](https://ai.jiangnan.edu.cn/info/1013/1592.htm). Previously, I received my Bachelor’s degree from Jiangnan University in 2023.
 
 I am honored to work in ICTLab during my master’s studies. My research interests include 1. Efficient architecture/runtime/compiler/system for AI Infra., 2. Near-memory AI Model design for edge/cluster devices, 3. Embedded Hardware/Software co-design for HPC. Currently, I am focusing on lightweight DNN inference framework for edge device, and exploring efficient resource management (such as memory, operators, hardware) and JIT optimization. Here is my CV.
+
 <span style="color:red;">
-Actively seeking industry research/HC positions and PhD opportunities. I am open to discussing potential collaborations and roles!
+**Actively seeking industry research/HC positions and PhD opportunities. I am open to discussing potential collaborations and roles!**
 </span>
 
 # 📖 Educations
