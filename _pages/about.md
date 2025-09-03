@@ -30,9 +30,11 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 - *2023.09 - 2026.06 (now)*  , Master of Engineering (Computer Science), School of Artificial Intelligence and Computing, Jiangnan University.
 - *2019.09 - 2023.06*        , Bachelor of Science (Information and Computational Science), School of Science, Jiangnan University.
 
+# 🎖 Honors and Awards
+- *2025.09* Graduate first-class scholarship in Jiangnan University.
+
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2025.03*: &nbsp;🎉🎉 2 Papers are accepted in FCCM 2025 (CCF-C).
 
 # 📝 Publications 
 
@@ -44,8 +46,4 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 **Tianshuo Lu**, Jianyang Ding, Huachen Zhang, Bowen Jiang, Wei Xu, Zhilei Chai
 </div>
 </div>
-
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
