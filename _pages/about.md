@@ -20,7 +20,11 @@ redirect_from:
 # About Me
 I am Tianshuo Lu (鲁天硕), a Master’s student (2023-2026) at [**Jiangnan University**](https://www.jiangnan.edu.cn/), advised by [**Prof. Zhilei Chai**](https://ai.jiangnan.edu.cn/info/1013/1592.htm). Previously, I received my Bachelor’s degree from Jiangnan University in 2023.
 
-I am honored to work in ICTLab during my master’s studies. My research interests include 1. Efficient architecture/runtime/compiler/system for AI Infra., 2. Near-memory AI Model design for edge/cluster devices, 3. Embedded Hardware/Software co-design for HPC. Currently, I am focusing on lightweight DNN inference framework for edge device, and exploring efficient resource management (such as memory, operators, hardware) and JIT optimization. Here is my CV.
+I am honored to work in ICTLab during my master’s studies. My research interests include: 
+1. Efficient Runtime &Compiler: Developing elastic runtimes, JIT compilers, and heterogeneous scheduling systems to optimize AI workloads on cluster or edge platforms.
+2. Software-Hardware Co-Design: Exploring customized RISC-V extensions, near-memory accelerators, and novel FPGA/ASICarchitectures for energy-efficient AI deployment.
+3. Model Compression & Lightweight Operators: Designing mixed-precision quantization, sparsity-aware operators, and lightweight models to balance accuracy and efficiency.
+4. End-to-End Deployment Frameworks: Building integrated frameworks that combine algorithmic compression, compiler optimization, and hardware mapping to achieve real-time AI inference on edge devices.
 
 <span style="color:red;">
 **Actively seeking industry research/HC positions and PhD opportunities. I am open to discussing potential collaborations and roles!**
@@ -33,17 +37,63 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 # 🎖 Honors and Awards
 - *2025.09* Graduate first-class scholarship in Jiangnan University.
 
+# 🗺️ Research Map
+
+<img src='images/frameworks.png' alt="sym" width="100%">
+
 # 🔥 News
-- *2025.03*: &nbsp;🎉🎉 2 Papers are accepted in FCCM 2025 (CCF-C).
+- *2025.09*: &nbsp;🎉🎉 1 Papers are accepted in TACO 2025 (CCF-A).
+- *2025.07*: &nbsp;🎉🎉 1 Papers are accepted by ACM TECS (CCF-B).
+- *2025.06*: &nbsp;🎉🎉 1 Papers are accepted by CGI 2025 (CCF-C).
+- *2025.03*: &nbsp;🎉🎉 2 Papers are accepted by FCCM 2025 (CCF-C).
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TACO</div><img src='images/taco2025_1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[EVO-QNN: Efficient Mixed-Precision Quantization Inference on RISC-V-Based Edge Device](https://ieeexplore.ieee.org/abstract/document/11008974)
+[Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3768630)
 
 **Tianshuo Lu**, Jianyang Ding, Huachen Zhang, Bowen Jiang, Wei Xu, Zhilei Chai
+
+**CCF-A** - *Sep. 2025*
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TECS</div><img src='images/tecs2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="2">
+
+[Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3756322)
+
+Huachen Zhang, Jianyang Ding, Bowen Jiang, **Tianshuo Lu**, Wei Xu, Zhilei Chai
+
+**CCF-B** - *July 2025*
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI 2025</div><img src='images/cgi2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="3">
+
+[Hybrid-SANet: Hybrid Self-Attention Transformer for Efficient Image Super-Resolution]()
+
+Wei Xu, Jianyang Ding, Huachen Zhang, **Tianshuo Lu**, , Zhilei Chai
+
+**CCF-C** - *June 2025*
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="4">
+
+[RV-ESMC: Efficient Sparse Matrix Convolution Processor based on RISC-V Custom instructions for Edge Platforms](https://doi.org/10.1109/FCCM62733.2025.00057)
+
+Huachen Zhang, Jianyang Ding, Bowen Jiang, **Tianshuo Lu**, Wei Xu, Zhilei Chai
+
+**CCF-C** - *Mar. 2025*
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="5">
+
+[EVO-QNN: Efficient Mixed-Precision Quantization Inference on RISC-V-Based Edge Device](https://doi.org/10.1109/FCCM62733.2025.00058)
+
+**Tianshuo Lu**, Jianyang Ding, Huachen Zhang, Bowen Jiang, Wei Xu, Zhilei Chai
+
+**CCF-C** - *Mar. 2025*
+
 </div>
 </div>
 
