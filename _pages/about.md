@@ -48,7 +48,7 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TACO</div><img src='images/taco2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TACO</div><img src='images/taco2025_01.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3768630)
@@ -60,7 +60,7 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TECS</div><img src='images/tecs2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TECS</div><img src='images/tecs2025_01.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3756322)
@@ -72,7 +72,7 @@ Huachen Zhang, Jianyang Ding, Bowen Jiang, **Tianshuo Lu**, Wei Xu, Zhilei Chai
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI 2025</div><img src='images/cgi2025_1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI 2025</div><img src='images/cgi2025_01.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Hybrid-SANet: Hybrid Self-Attention Transformer for Efficient Image Super-Resolution]()
@@ -84,7 +84,7 @@ Wei Xu, Jianyang Ding, Huachen Zhang, **Tianshuo Lu**, , Zhilei Chai
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_02.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RV-ESMC: Efficient Sparse Matrix Convolution Processor based on RISC-V Custom instructions for Edge Platforms](https://doi.org/10.1109/FCCM62733.2025.00057)
