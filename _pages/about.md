@@ -59,7 +59,7 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 **CCF-A** - *Sep. 2025*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TECS</div><img src='images/tecs2025_1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="2">
+<div class='paper-box-text' markdown="1">
 
 [Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3756322)
 
@@ -68,7 +68,7 @@ Huachen Zhang, Jianyang Ding, Bowen Jiang, **Tianshuo Lu**, Wei Xu, Zhilei Chai
 **CCF-B** - *July 2025*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CGI 2025</div><img src='images/cgi2025_1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="3">
+<div class='paper-box-text' markdown="1">
 
 [Hybrid-SANet: Hybrid Self-Attention Transformer for Efficient Image Super-Resolution]()
 
@@ -77,7 +77,7 @@ Wei Xu, Jianyang Ding, Huachen Zhang, **Tianshuo Lu**, , Zhilei Chai
 **CCF-C** - *June 2025*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="4">
+<div class='paper-box-text' markdown="1">
 
 [RV-ESMC: Efficient Sparse Matrix Convolution Processor based on RISC-V Custom instructions for Edge Platforms](https://doi.org/10.1109/FCCM62733.2025.00057)
 
@@ -86,7 +86,7 @@ Huachen Zhang, Jianyang Ding, Bowen Jiang, **Tianshuo Lu**, Wei Xu, Zhilei Chai
 **CCF-C** - *Mar. 2025*
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">FCCM 2025</div><img src='images/fccm2025_1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="5">
+<div class='paper-box-text' markdown="1">
 
 [EVO-QNN: Efficient Mixed-Precision Quantization Inference on RISC-V-Based Edge Device](https://doi.org/10.1109/FCCM62733.2025.00058)
 
