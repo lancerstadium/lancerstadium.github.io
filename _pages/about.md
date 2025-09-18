@@ -54,7 +54,7 @@ I am honored to work in ICTLab during my master’s studies. My research interes
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM TACO</div><img src='images/taco2025_01.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Optimizing Sparse Matrix Convolution on RISC-V Core: Custom Instructions for Embedded System Accept by ACM Transactions on Embedded Computing Systems](https://doi.org/10.1145/3768630)
+[Efficient Flexible Edge Inference for Mixed-Precision Quantized DNN using Customized RISC-V Core](https://doi.org/10.1145/3768630)
 
 **Tianshuo Lu**, Jianyang Ding, Huachen Zhang, Bowen Jiang, Wei Xu, Zhilei Chai
 
